@@ -6,6 +6,8 @@
 # 数据类型
 ![Image text](integer.JPG)
 ![Image text](integer_overflow.JPG)
+![Image text](gc.JPG)
+![Image text](step.JPG)
 
 
 
