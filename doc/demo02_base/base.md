@@ -4,6 +4,9 @@
 - [B站视频](https://www.bilibili.com/video/BV17g4y1z7uS)
 
 # 数据类型
+- gds有5种基础类型
+    - Boolean，Integer(Java long)，Float(Java double)，String，Null
+
 ![Image text](integer.JPG)
 ![Image text](integer_overflow.JPG)
 ![Image text](gc.JPG)
