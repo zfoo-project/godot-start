@@ -1,4 +1,4 @@
-# 为什么选择godot
+# 为什么选择godot，而不选择unity和ue
 
 - 比unity简单，更加易上手，GDScript学起来也比C#简单
 
