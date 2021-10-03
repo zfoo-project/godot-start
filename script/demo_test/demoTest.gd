@@ -1,6 +1,6 @@
 extends Node2D
 
-const RandomUtils = preload("res://util/RandomUtils.gd")
+const RandomUtils = preload("res://zfoo/util/RandomUtils.gd")
 
 var count = 0
 

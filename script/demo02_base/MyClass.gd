@@ -1,6 +1,6 @@
 # extends Node2D
 
-const StringUtils = preload("res://util/StringUtils.gd")
+const StringUtils = preload("res://zfoo/util/StringUtils.gd")
 
 # (optional) class definition with a custom icon
 class_name MyClass, "res://icon.png"

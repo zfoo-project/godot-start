@@ -1,6 +1,6 @@
 extends Object
 
-const ArrayUtils = preload("res://util/ArrayUtils.gd")
+const ArrayUtils = preload("res://zfoo/util/ArrayUtils.gd")
 
 const EMPTY: String = ""
 const EMPTY_JSON: String = "{}"

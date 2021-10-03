@@ -1,7 +1,7 @@
 extends Object
 
-const NumberUtils = preload("res://util/NumberUtils.gd")
-const StringUtils = preload("res://util/StringUtils.gd")
+const NumberUtils = preload("res://zfoo/util/NumberUtils.gd")
+const StringUtils = preload("res://zfoo/util/StringUtils.gd")
 
 const random = [false, null]
 
