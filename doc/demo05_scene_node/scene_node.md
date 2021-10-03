@@ -22,6 +22,7 @@ unity的2d坐标系虽然在左下角，但是unity的屏幕坐标系依然在�
 ![Image text](image/场景.png)
 ![Image text](image/节点.png)
 ![Image text](image/节点渲染顺序.png)
+![Image text](image/节点的顺序.png)
 
 - 一个游戏可以包含多个场景，但是一个场景中必须有一个根节点，一个根节点可以包含多个不重名的子节点（unity的子节点可以同名），不同名更加符合习惯，为godot点赞。
 

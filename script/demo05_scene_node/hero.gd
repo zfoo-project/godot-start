@@ -6,6 +6,23 @@ var gameHeight: int
 var spriteWidth: int
 var spriteHeight: int
 	
+
+
+func _enter_tree():
+	var texture = get_texture()
+	var image = texture.get_data()
+	print(offset)
+	print("texture type: ", texture)
+	print("height: ", texture.get_height())
+	print("width: ", texture.get_width())
+	print("Image data property: ", image.data)
+	
+	# 无法直接编辑图片
+	image.shrink_x2()
+	print("new image data property",image.data)
+	#这样做会破坏项目的资源，使资源变得混乱
+	#image.save_png("C:\\Users\\jaysunxiao\\Desktop\\newImage.png")
+
 func _physics_process(delta):
 	setupSprite()
 	setupGameWindow()	
