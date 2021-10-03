@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/integer_overflow.JPG-08e89d4444868183c3be1155d3451030.stex"
+path="res://.import/节点.png-caccd57bbbfafdce9e2636439f7a3f30.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doc/demo02_base/integer_overflow.JPG"
-dest_files=[ "res://.import/integer_overflow.JPG-08e89d4444868183c3be1155d3451030.stex" ]
+source_file="res://doc/demo05_scene_node/image/节点.png"
+dest_files=[ "res://.import/节点.png-caccd57bbbfafdce9e2636439f7a3f30.stex" ]
 
 [params]
 

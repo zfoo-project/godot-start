@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/step.JPG-ea371ce51ca536d0350e70aed54f8432.stex"
+path="res://.import/delta.png-6d33a172cc16b58040616e8ab29659c0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doc/demo02_base/step.JPG"
-dest_files=[ "res://.import/step.JPG-ea371ce51ca536d0350e70aed54f8432.stex" ]
+source_file="res://doc/demo03_lifecycle/image/delta.png"
+dest_files=[ "res://.import/delta.png-6d33a172cc16b58040616e8ab29659c0.stex" ]
 
 [params]
 

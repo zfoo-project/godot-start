@@ -37,7 +37,7 @@ func _ready():
 	myClass.innerClassTest()
 
 	print("垃圾回收--------------------------------")
-	# 如果一个类没有指明继承哪个类，则默认继承Reference（可以被自动的垃圾回收，类似其他语言的那种垃圾回收）
+	# 如果一个类没有指明继承哪个类，则默认继承Reference（可以被自动的垃圾回收，类似其他语言的那种垃圾回收），非常重要的知识点
 	for i in range(10000):
 		var instance = MyClass.new()
 		arr.append(instance)

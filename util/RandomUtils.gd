@@ -38,3 +38,6 @@ static func randomIntRange(from: int, to: int) -> int:
 		return 0
 	
 	return getRandom().randi_range(from, to - 1)
+
+static func randomEle(array: Array):
+	return array[randomIntLimit(array.size())]

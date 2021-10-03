@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gc.JPG-39fa032320410100941ba40578241fc0.stex"
+path="res://.import/坐标系.png-8f9d049adb143c879b7a19c22253ff65.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doc/demo02_base/gc.JPG"
-dest_files=[ "res://.import/gc.JPG-39fa032320410100941ba40578241fc0.stex" ]
+source_file="res://doc/demo05_scene_node/image/坐标系.png"
+dest_files=[ "res://.import/坐标系.png-8f9d049adb143c879b7a19c22253ff65.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/godot_node.jpg-16331f3f19dfee3528c1c8a0616ee82e.stex"
+path="res://.import/godot_lifecycle.jpg-037760a00ff142e71992244f6df72be8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doc/demo03_lifecycle/godot_node.jpg"
-dest_files=[ "res://.import/godot_node.jpg-16331f3f19dfee3528c1c8a0616ee82e.stex" ]
+source_file="res://doc/demo03_lifecycle/image/godot_lifecycle.jpg"
+dest_files=[ "res://.import/godot_lifecycle.jpg-037760a00ff142e71992244f6df72be8.stex" ]
 
 [params]
 
