@@ -9,7 +9,16 @@ const CollectionUtils = preload("res://zfoo/util/CollectionUtils.gd")
 
 const schedulerMap: Dictionary = {}
 
+
+# 固定延迟执行的任务，delay默认为毫秒
 static func schedule(runnable: Runnable, delay: int) -> void:
+	var triggerTimestamp = TimeUtils.currentTimeMillis() + delay
+	var definition = SchedulerDefinition.new(runnable, delay, triggerTimestamp, false)
+	schedulerMap[definition] = null
+
+
+# 不断执行的周期循环任务，delay默认为毫秒
+static func scheduleAtFixRate(runnable: Runnable, delay: int) -> void:
 	var triggerTimestamp = TimeUtils.currentTimeMillis() + delay
 	var definition = SchedulerDefinition.new(runnable, delay, triggerTimestamp, false)
 	schedulerMap[definition] = null
