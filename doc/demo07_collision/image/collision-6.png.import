@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/collision-4.png-8abde2684cb4a6da72469d58ba07777e.stex"
+path="res://.import/collision-6.png-b9a69e5b907f9b0de8c814721146526d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doc/demo06_collision/image/collision-4.png"
-dest_files=[ "res://.import/collision-4.png-8abde2684cb4a6da72469d58ba07777e.stex" ]
+source_file="res://doc/demo07_collision/image/collision-6.png"
+dest_files=[ "res://.import/collision-6.png-b9a69e5b907f9b0de8c814721146526d.stex" ]
 
 [params]
 
