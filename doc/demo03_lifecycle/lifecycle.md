@@ -1,3 +1,4 @@
+![Image text](image/scene-tree.png)
 ![Image text](image/场景循环.png)
 ![Image text](image/场景帧.png)
 ![Image text](image/delta.png)
