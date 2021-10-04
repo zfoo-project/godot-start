@@ -9,6 +9,21 @@ var spriteHeight: int
 
 
 func _enter_tree():
+	# textureTest()
+	# positionTest()
+	pass
+
+
+# 坐标点测试用例
+func positionTest():
+	print(position)
+	print(global_position)
+	print(to_global(position))
+	print(to_local(global_position))
+	pass
+
+# 纹理测试用例
+func textureTest():
 	var texture = get_texture()
 	var image = texture.get_data()
 	print(offset)
@@ -16,7 +31,7 @@ func _enter_tree():
 	print("height: ", texture.get_height())
 	print("width: ", texture.get_width())
 	print("Image data property: ", image.data)
-	
+
 	# 无法直接编辑图片
 	image.shrink_x2()
 	print("new image data property",image.data)

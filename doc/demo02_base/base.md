@@ -20,6 +20,8 @@
 ![Image text](image/gc2.png)
 ![Image text](image/gc3.png)
 
+- gdscript是垃圾回收和手动回收结合起来了，使用什么样的回收完全交给你自己
+![Image text](image/太极.png)
 
 
 
