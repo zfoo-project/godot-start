@@ -4,4 +4,5 @@ const TimeUtils = preload("res://zfoo/scheduler/TimeUtils.gd")
 
 
 static func test():
+	print("-----------------------SchedulerBus-----------------------")
 	SchedulerBus.schedule(MySchedulerRunnable.new(), 5000)
