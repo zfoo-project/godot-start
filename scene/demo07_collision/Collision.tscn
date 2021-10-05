@@ -55,7 +55,6 @@ polygon = PoolVector2Array( -25.5147, -183.959, -26.2638, 45.2817, 895.944, 52.0
 
 [node name="RigidBody2D" type="RigidBody2D" parent="."]
 position = Vector2( 880.023, 40.7525 )
-continuous_cd = 1
 __meta__ = {
 "_edit_group_": true
 }

@@ -1,0 +1,2 @@
+- AnimationPlayer是时间和属性的变化，是一种动画的表现
+- AnimatedSprite是序列帧的简便的用法
