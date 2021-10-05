@@ -5,7 +5,7 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="MoveHero" type="Sprite" parent="."]
-position = Vector2( 492.717, 412.746 )
+[node name="HeroMove" type="Sprite" parent="."]
+position = Vector2( 552.42, 212.613 )
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
