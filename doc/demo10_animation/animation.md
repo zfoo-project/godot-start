@@ -13,3 +13,7 @@
 
 - AnimationPlayer是时间和属性的变化，是一种动画的表现
 - AnimatedSprite是序列帧的简便的用法
+
+![Image text](image/animated1.png)
+![Image text](image/animated2.png)
+![Image text](image/animated3.png)
