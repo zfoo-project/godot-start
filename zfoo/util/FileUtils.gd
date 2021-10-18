@@ -24,3 +24,17 @@ static func readFileToString(filePath: String) -> String:
 	var content = file.get_as_text()
 	file.close()
 	return content
+
+# 读取文件
+static func readFileToByteArray(filePath: String) -> PoolByteArray:
+	var file = File.new()
+	# make sure our file exists on users system
+	if !file.file_exists(filePath):
+		return PoolByteArray()
+	
+	# allow reading only for file
+	file.open(filePath, File.READ)
+	
+	var buffer = file.get_buffer(file.get_len())
+	file.close()
+	return buffer
