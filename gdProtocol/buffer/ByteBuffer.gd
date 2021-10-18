@@ -257,3 +257,405 @@ func readPacket(protocolId):
 
 func newInstance(protocolId: int):
 	return ProtocolManager.newInstance(protocolId)
+
+func writeBooleanArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeBool(element)
+			
+func readBooleanArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readBool())
+	return array
+	
+func writeByteArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeByte(element)
+			
+func readByteArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readByte())
+	return array
+	
+func writeShortArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeShort(element)
+			
+func readShortArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readShort())
+	return array
+	
+func writeIntArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeInt(element)
+			
+func readIntArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readInt())
+	return array
+	
+func writeLongArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeLong(element)
+			
+func readLongArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readLong())
+	return array
+	
+func writeFloatArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeFloat(element)
+			
+func readFloatArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readFloat())
+	return array
+	
+func writeDoubleArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeDouble(element)
+			
+func readDoubleArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readDouble())
+	return array
+	
+func writeCharArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeChar(element)
+			
+func readCharArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readChar())
+	return array
+	
+func writeStringArray(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size());
+		for element in value:
+			writeString(element)
+			
+func readStringArray():
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			array.append(readString())
+	return array
+
+	
+func writePacketArray(value, protocolId):
+	if (value == null):
+		writeInt(0)
+	else:
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		writeInt(value.size());
+		for element in value:
+			protocolRegistration.write(self, element)
+			
+func readPacketArray(protocolId):
+	var array = []
+	var size = readInt()
+	if (size > 0):
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		for index in range(size):
+			array.append(protocolRegistration.read(self))
+	return array
+
+func writeIntIntMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeInt(key)
+			writeInt(value[key])
+			
+func readIntIntMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readInt()
+			var value = readInt()
+			map[key] = value
+	return map
+	
+func writeIntLongMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeInt(key)
+			writeLong(value[key])
+			
+func readIntLongMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readInt()
+			var value = readLong()
+			map[key] = value
+	return map
+	
+func writeIntStringMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeInt(key)
+			writeString(value[key])
+			
+func readIntStringMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readInt()
+			var value = readString()
+			map[key] = value
+	return map
+
+
+func writeIntPacketMap(value, protocolId):
+	if (value == null):
+		writeInt(0)
+	else:
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		writeInt(value.size())
+		for key in value:
+			writeInt(key)
+			protocolRegistration.write(self, value[key])
+
+func readIntPacketMap(protocolId):
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		for index in range(size):
+			var key = readInt()
+			var value = protocolRegistration.read(self)
+			map[key] = value
+	return map
+	
+	
+func writeLongIntMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeLong(key)
+			writeInt(value[key])
+			
+func readLongIntMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readLong()
+			var value = readInt()
+			map[key] = value
+	return map
+	
+func writeLongLongMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeLong(key)
+			writeLong(value[key])
+			
+func readLongLongMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readLong()
+			var value = readLong()
+			map[key] = value
+	return map
+	
+func writeLongStringMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeLong(key)
+			writeString(value[key])
+			
+func readLongStringMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readLong()
+			var value = readString()
+			map[key] = value
+	return map
+
+
+func writeLongPacketMap(value, protocolId):
+	if (value == null):
+		writeInt(0)
+	else:
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		writeInt(value.size())
+		for key in value:
+			writeLong(key)
+			protocolRegistration.write(self, value[key])
+
+func readLongPacketMap(protocolId):
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		for index in range(size):
+			var key = readLong()
+			var value = protocolRegistration.read(self)
+			map[key] = value
+	return map
+	
+
+func writeStringIntMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeString(key)
+			writeInt(value[key])
+			
+func readStringIntMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readString()
+			var value = readInt()
+			map[key] = value
+	return map
+	
+func writeStringLongMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeString(key)
+			writeLong(value[key])
+			
+func readStringLongMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readString()
+			var value = readLong()
+			map[key] = value
+	return map
+	
+func writeStringStringMap(value):
+	if (value == null):
+		writeInt(0)
+	else:
+		writeInt(value.size())
+		for key in value:
+			writeString(key)
+			writeString(value[key])
+			
+func readStringStringMap():
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		for index in range(size):
+			var key = readString()
+			var value = readString()
+			map[key] = value
+	return map
+
+
+func writeStringPacketMap(value, protocolId):
+	if (value == null):
+		writeInt(0)
+	else:
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		writeInt(value.size())
+		for key in value:
+			writeString(key)
+			protocolRegistration.write(self, value[key])
+
+func readStringPacketMap(protocolId):
+	var map = {}
+	var size = readInt()
+	if (size > 0):
+		var protocolRegistration = ProtocolManager.getProtocol(protocolId)
+		for index in range(size):
+			var key = readString()
+			var value = protocolRegistration.read(self)
+			map[key] = value
+	return map

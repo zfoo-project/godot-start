@@ -26,8 +26,8 @@ static func read(buffer):
 	return packet;
 
 static func initProtocol():
-	protocols[100] = ComplexObject;
-	protocols[101] = NormalObject;
-	protocols[102] = ObjectA;
-	protocols[103] = ObjectB;
-	protocols[104] = SimpleObject;
+	protocols[100] = ComplexObject
+	protocols[101] = NormalObject
+	protocols[102] = ObjectA
+	protocols[103] = ObjectB
+	protocols[104] = SimpleObject

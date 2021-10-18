@@ -25,12 +25,7 @@ static func write(buffer, packet):
 	if (buffer.writePacketFlag(packet)):
 		return
 	buffer.writeByte(packet.a)
-	if (packet.aaa == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.aaa.size());
-		for element0 in packet.aaa:
-			buffer.writeByte(element0)
+	buffer.writeByteArray(packet.aaa)
 	buffer.writeShort(packet.b)
 	buffer.writeInt(packet.c)
 	buffer.writeLong(packet.d)
@@ -38,146 +33,55 @@ static func write(buffer, packet):
 	buffer.writeDouble(packet.f)
 	buffer.writeBool(packet.g)
 	buffer.writeString(packet.jj)
-	buffer.writePacket(packet.kk, 102);
-	if (packet.l == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.l.size());
-		for element1 in packet.l:
-			buffer.writeInt(element1)
-	if (packet.ll == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.ll.size());
-		for element2 in packet.ll:
-			buffer.writeLong(element2)
-	if (packet.lll == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.lll.size());
-		for element3 in packet.lll:
-			buffer.writePacket(element3, 102);
-	if (packet.llll == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.llll.size());
-		for element4 in packet.llll:
-			buffer.writeString(element4)
-	if (packet.m == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.m.size())
-		for key5 in packet.m:
-			var value6 = packet.m[key5]
-			buffer.writeInt(key5)
-			buffer.writeString(value6)
-	if (packet.mm == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.mm.size())
-		for key7 in packet.mm:
-			var value8 = packet.mm[key7]
-			buffer.writeInt(key7)
-			buffer.writePacket(value8, 102);
-	if (packet.s == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.s.size());
-		for element9 in packet.s:
-			buffer.writeInt(element9)
-	if (packet.ssss == null):
-		buffer.writeInt(0)
-	else:
-		buffer.writeInt(packet.ssss.size());
-		for element10 in packet.ssss:
-			buffer.writeString(element10)
+	buffer.writePacket(packet.kk, 102)
+	buffer.writeIntArray(packet.l)
+	buffer.writeLongArray(packet.ll)
+	buffer.writePacketArray(packet.lll, 102)
+	buffer.writeStringArray(packet.llll)
+	buffer.writeIntStringMap(packet.m)
+	buffer.writeIntPacketMap(packet.mm, 102)
+	buffer.writeIntArray(packet.s)
+	buffer.writeStringArray(packet.ssss)
 
 
 static func read(buffer):
 	if (!buffer.readBool()):
 		return null
 	var packet = buffer.newInstance(101)
-	var result11 = buffer.readByte()
-	packet.a = result11
-	var result12 = []
-	var size14 = buffer.readInt()
-	if (size14 > 0):
-		for index13 in range(size14):
-			var result15 = buffer.readByte()
-			result12.append(result15)
-	packet.aaa = result12
-	var result16 = buffer.readShort()
-	packet.b = result16
-	var result17 = buffer.readInt()
-	packet.c = result17
-	var result18 = buffer.readLong()
-	packet.d = result18
-	var result19 = buffer.readFloat()
-	packet.e = result19
-	var result20 = buffer.readDouble()
-	packet.f = result20
-	var result21 = buffer.readBool() 
-	packet.g = result21
-	var result22 = buffer.readString()
-	packet.jj = result22
-	var result23 = buffer.readPacket(102)
-	packet.kk = result23
-	var result24 = []
-	var size26 = buffer.readInt()
-	if (size26 > 0):
-		for index25 in range(size26):
-			var result27 = buffer.readInt()
-			result24.append(result27)
-	packet.l = result24
-	var result28 = []
-	var size30 = buffer.readInt()
-	if (size30 > 0):
-		for index29 in range(size30):
-			var result31 = buffer.readLong()
-			result28.append(result31)
-	packet.ll = result28
-	var result32 = []
-	var size34 = buffer.readInt()
-	if (size34 > 0):
-		for index33 in range(size34):
-			var result35 = buffer.readPacket(102)
-			result32.append(result35)
-	packet.lll = result32
-	var result36 = []
-	var size38 = buffer.readInt()
-	if (size38 > 0):
-		for index37 in range(size38):
-			var result39 = buffer.readString()
-			result36.append(result39)
-	packet.llll = result36
-	var result40 = {}
-	var size41 = buffer.readInt()
-	if (size41 > 0):
-		for index42 in range(size41):
-			var result43 = buffer.readInt()
-			var result44 = buffer.readString()
-			result40[result43] = result44
-	packet.m = result40
-	var result45 = {}
-	var size46 = buffer.readInt()
-	if (size46 > 0):
-		for index47 in range(size46):
-			var result48 = buffer.readInt()
-			var result49 = buffer.readPacket(102)
-			result45[result48] = result49
-	packet.mm = result45
-	var result50 = []
-	var size52 = buffer.readInt()
-	if (size52 > 0):
-		for index51 in range(size52):
-			var result53 = buffer.readInt()
-			result50.append(result53)
-	packet.s = result50
-	var result54 = []
-	var size56 = buffer.readInt()
-	if (size56 > 0):
-		for index55 in range(size56):
-			var result57 = buffer.readString()
-			result54.append(result57)
-	packet.ssss = result54
+	var result0 = buffer.readByte()
+	packet.a = result0
+	var array1 = buffer.readByteArray()
+	packet.aaa = array1
+	var result2 = buffer.readShort()
+	packet.b = result2
+	var result3 = buffer.readInt()
+	packet.c = result3
+	var result4 = buffer.readLong()
+	packet.d = result4
+	var result5 = buffer.readFloat()
+	packet.e = result5
+	var result6 = buffer.readDouble()
+	packet.f = result6
+	var result7 = buffer.readBool() 
+	packet.g = result7
+	var result8 = buffer.readString()
+	packet.jj = result8
+	var result9 = buffer.readPacket(102)
+	packet.kk = result9
+	var list10 = buffer.readIntArray()
+	packet.l = list10
+	var list11 = buffer.readLongArray()
+	packet.ll = list11
+	var list12 = buffer.readPacketArray(102)
+	packet.lll = list12
+	var list13 = buffer.readStringArray()
+	packet.llll = list13
+	var map14 = buffer.readIntStringMap()
+	packet.m = map14
+	var map15 = buffer.readIntPacketMap(102)
+	packet.mm = map15
+	var set16 = buffer.readIntArray()
+	packet.s = set16
+	var set17 = buffer.readStringArray()
+	packet.ssss = set17
 	return packet
