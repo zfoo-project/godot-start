@@ -1,4 +1,4 @@
-# extends Node2D
+extends Node2D
 
 const StringUtils = preload("res://zfoo/util/StringUtils.gd")
 
@@ -60,7 +60,7 @@ func typeInfo():
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(dict), dict]))
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(FOOD), FOOD]))
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(FOOD.GOOD), FOOD.GOOD]))
-	print(self is Reference)
+	print(self is Node)
 	print(a is Dog) # 类似于instanceof
 
 func some_function(param1, param2):

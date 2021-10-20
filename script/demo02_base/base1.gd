@@ -1,5 +1,6 @@
 extends Node2D
 
+
 # Declare member variables here. Examples:
 export var a = 1
 export var b:NodePath
@@ -8,7 +9,7 @@ export(String, FILE) var e
 export(String, FILE, "*.txt") var d
 export(Resource) var f
 export(Color, RGB) var g
-var arr = []
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	print("new一个对象--------------------------------")
@@ -36,24 +37,4 @@ func _ready():
 	print("内部类测试--------------------------------")
 	myClass.innerClassTest()
 
-	print("垃圾回收--------------------------------")
-	# 如果一个类没有指明继承哪个类，则默认继承Reference（可以被自动的垃圾回收，类似其他语言的那种垃圾回收），非常重要的知识点
-	for i in range(10000):
-		var instance = MyClass.new()
-		arr.append(instance)
-		# instance.unreference()
-		# 立即释放对象
-		# instance.free()
-		# 放在队列里，等系统统一释放对象，推荐
-		# instance.queue_free()
-	print("立即输出数组的第一位内容：")
-	var firstElement = arr[0]
-	print(arr[0])
 
-var frame = 0
-func _process(delta):
-	frame = frame + 1
-	if frame == 300:
-		print("等待一会数组的第一位内容")
-		arr[0].typeInfo()
-		print(typeof(arr[0]))
