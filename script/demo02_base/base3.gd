@@ -5,9 +5,9 @@ const B = preload("res://script/demo02_base/B.gd")
 
 func _ready():
 	#referenceTest()
-	#referenceCycleTest()
+	referenceCycleTest()
 	#referenceUnreference1Test()
-	referenceUnreference2Test()
+	#referenceUnreference2Test()
 	pass
 
 
