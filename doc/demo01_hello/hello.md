@@ -3,17 +3,17 @@
 - godot比cocos, unity, ue简单，更加易上手
 
 
-- godot
-    - godot的源代码比cocos的源代码少一倍，所以godot源代码更加的简洁，简洁的代码更容易学习底层原理
-    - cocos主要都用在2D方面，2D方面godot支持的更加全面
-    - GDScript比JavaScript更加简单，因为GDScript是定制过后的语言
+- godot和cocos对比
+  - godot的源代码比cocos的源代码少一倍，所以godot源代码更加的简洁，简洁的代码更容易学习底层原理
+  - cocos主要都用在2D方面，2D方面godot支持的更加全面
+  - GDScript比JavaScript更加简单，因为GDScript是定制过后的语言
 
 
 - godot和unity对比
-    - unity代码不开源，但是即使开源unity的源代码体积绝对大于godot一倍以上
-    - godot安装包50M，unity安装几个g
-    - 目前2d方面godot优于unity，3d方面unity优于godot，godot4.0有望大大缩小和unity的差距
-    - GDScript学起来也比unity的C#和Lua简单
+  - unity代码不开源，但是即使开源unity的源代码体积绝对大于godot一倍以上
+  - godot安装包50M，unity安装几个g
+  - 目前2d方面godot优于unity，3d方面unity优于godot，godot4.0有望大大缩小和unity的差距
+  - GDScript学起来也比unity的C#和Lua简单
   ```
   大部分使用unity的开发人员都在使用Lua做开发，虽然unity官方说的是用C#，但是C#不能热更新，所以实际上工作用的大部分使用的是能够热更新的Lua
   比如原神就有用到Lua来去做热更新
