@@ -28,13 +28,13 @@
 - godot和ue对比
     - 自主可控(避免被“卡脖子”)，从开源软件的角度分析，godot是游戏引擎界的Linux，ue和unity算是Windows
     - ue虽然开源源代码，但是代码量太大，历史包袱太重，不适合深入研究底层代码的人
-      ![Image text](engine-source.PNG)
+      ![Image text](image/engine-source.PNG)
 
 
 - godot的作者尽最大努力的减少第三方库的依赖，最终使其代码非常精简，适合学习
 - 源代码开源，不收费，unity和ue都是要收费的，ue超过100万美元触发5%的分成费用
-  ![Image text](apache-license.png)
-  ![Image text](gd-home.JPG)
+  ![Image text](image/apache-license.png)
+  ![Image text](image/gd-home.JPG)
 
 
 - 使用godot你既可以用GDScript去编写代码，也可以用C++去编写代码，还可以去改底层引擎代码

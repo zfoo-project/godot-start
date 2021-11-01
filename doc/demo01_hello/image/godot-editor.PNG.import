@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gd-home.JPG-3866ba9615d150fc9f82a3f7e19e041e.stex"
+path="res://.import/godot-editor.PNG-b03f8dad21107b1a527907551134d978.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doc/demo01_hello/gd-home.JPG"
-dest_files=[ "res://.import/gd-home.JPG-3866ba9615d150fc9f82a3f7e19e041e.stex" ]
+source_file="res://doc/demo01_hello/image/godot-editor.PNG"
+dest_files=[ "res://.import/godot-editor.PNG-b03f8dad21107b1a527907551134d978.stex" ]
 
 [params]
 
