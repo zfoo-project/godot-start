@@ -42,8 +42,8 @@
 ```
 比如，常用的几种类型:
 Texture 图片素材  ( *.jpg /  *.png)
-AudioClip 音频素材 ( *.mp3)
-C# Script 程序脚本 ( *.gd)
+Audio音频素材 ( *.mp3)
+程序脚本GdScript ( *.gd)
 ```
 
 - 可以对素材执行删除 Delete 、重命名 Rename 等操作
