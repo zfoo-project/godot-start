@@ -3,7 +3,7 @@
 [ext_resource path="res://script/demo13_camera/player.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 position = Vector2( -82.76, 10.6787 )
 
 [node name="icon" type="Sprite" parent="."]
