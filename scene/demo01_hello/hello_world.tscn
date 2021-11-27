@@ -18,11 +18,3 @@ max_lines_visible = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Labela" type="Label" parent="Label"]
-margin_right = 40.0
-margin_bottom = 14.0
-text = "bbbbbbbbbb"
-__meta__ = {
-"_edit_use_anchors_": false
-}
