@@ -139,7 +139,7 @@ __meta__ = {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Animation_5"]
 frames = SubResource( 3 )
-frame = 5
+frame = 7
 playing = true
 
 [connection signal="timeout" from="Animation_1/Sprite/Timer" to="Animation_1/Sprite" method="_on_Timer_timeout"]
