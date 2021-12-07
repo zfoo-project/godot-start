@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/小电视.png-d8bd8dfcacf70631b09155df2e1c2fcf.stex"
+path="res://.import/composit_image.png-a9d02ba3153d040a583439e4a97f6b5b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://doc/demo01_hello/bilibili/小电视.png"
-dest_files=[ "res://.import/小电视.png-d8bd8dfcacf70631b09155df2e1c2fcf.stex" ]
+source_file="res://doc/demo01_hello/bilibili/composit_image.png"
+dest_files=[ "res://.import/composit_image.png-a9d02ba3153d040a583439e4a97f6b5b.stex" ]
 
 [params]
 
