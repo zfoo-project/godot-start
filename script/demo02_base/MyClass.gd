@@ -22,6 +22,8 @@ var dict = {
 	arr: "数组作为key"
 }
 var typed_var: int
+var typed_var_float: float
+var typed_var_bool: bool
 var inferred_type: String = "String"
 
 # Constants
