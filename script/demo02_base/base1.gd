@@ -10,8 +10,13 @@ export(String, FILE, "*.txt") var d
 export(Resource) var f
 export(Color, RGB) var g
 
+func _init():
+	print("init")
+	
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print("ready")
 	print("new一个对象--------------------------------")
 	var myClass = MyClass.new()
 	print(myClass.to_string())
