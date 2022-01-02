@@ -19,8 +19,20 @@ func _ready():
 	print("类型信息--------------------------------")
 	myClass.typeInfo()
 	
-	print("基础语法--------------------------------")
-	myClass.some_function(1, 2)
+	print("基础语法if else--------------------------------")
+	myClass.if_function(1, 2)
+	
+	print("基础语法switch--------------------------------")
+	myClass.switch_function()
+	
+	print("基础语法while for--------------------------------")
+	myClass.loop_function()
+	
+	print("数组遍历--------------------------------")	
+	myClass.arrayIterator()
+	
+	print("字典遍历--------------------------------")	
+	myClass.dictionaryIterator()
 	
 	print("访问静态变量--------------------------------")
 	var answer = MyClass.ANSWER
@@ -29,10 +41,6 @@ func _ready():
 	print("调用静态方法--------------------------------")
 	print("调用静态方法：" + MyClass.getAnswer() as String)
 	
-	print("数组遍历--------------------------------")	
-	myClass.arrayIterator()
-	print("字典遍历--------------------------------")	
-	myClass.dictionaryIterator()
 
 	print("内部类测试--------------------------------")
 	myClass.innerClassTest()
