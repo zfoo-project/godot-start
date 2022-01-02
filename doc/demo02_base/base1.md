@@ -291,7 +291,8 @@ class Animal:
 - 在编写 GdScript 时，如果没有调试工具将是一件很痛苦的事情。
 - 你的代码可能包含语法错误，逻辑错误，有了调试工具，这些错误比较容易发现。
 
-- 参考资料
+# 13. 参考资料
+
 - [godot官方文档](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_basics.html)
 - [Godot Tutorials的GDScript Fundamentals Tutorial Series，youtube播放量最高的godot教程视频](https://www.youtube.com/watch?v=JJQa3xrRNM0&list=PLJ690cxlZTgL4i3sjTPRQTyrJ5TTkYJ2_)
 - [Godot Tutorials的Godot Basics Tutorial Series，youtube播放量最高的godot教程视频](https://www.youtube.com/watch?v=sChM51ibm5k&list=PLJ690cxlZTgIsmdEhFufnB7O6KWoMS8M6)
