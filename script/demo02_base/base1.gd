@@ -1,13 +1,19 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
+# 导出一个数字
 export var a = 1
+# 导出一个节点路径
 export var b:NodePath
+# 导出一个节点路径，不同的写法
 export(NodePath) var c
+# 导出一个文件路径
 export(String, FILE) var e 
+# 导出一个文件路径，以txt结尾
 export(String, FILE, "*.txt") var d
+# 导出一个资源文件路径
 export(Resource) var f
+# 导出一个颜色
 export(Color, RGB) var g
 
 func _init():

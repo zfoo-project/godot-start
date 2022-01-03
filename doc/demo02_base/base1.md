@@ -65,7 +65,28 @@ z=x+y
 ![Image text](image/integer_overflow.JPG)
 ![Image text](image/step.JPG)
 
-# 5.函数
+# 5.导出变量
+
+- export关键字可以让变量在编辑器中编辑
+
+```
+# 导出一个数字
+export var a = 1
+# 导出一个节点路径
+export var b:NodePath
+# 导出一个节点路径，不同的写法
+export(NodePath) var c
+# 导出一个文件路径
+export(String, FILE) var e 
+# 导出一个文件路径，以txt结尾
+export(String, FILE, "*.txt") var d
+# 导出一个资源文件路径
+export(Resource) var f
+# 导出一个颜色
+export(Color, RGB) var g
+```
+
+# 6.函数
 
 - 函数是可以简单的理解为当它被调用时执行的可重复使用的代码块。
 - 函数就是包裹在花括号中的代码块，前面使用了关键词 func，当调用该函数时，会执行函数内的代码。
@@ -96,7 +117,7 @@ func sayHello(param1， param2)
 }
 ```
 
-# 6.变量的作用域
+# 7.变量的作用域
 
 - 局部作用域，变量在函数内声明，变量为局部作用域，只能在函数内部访问
 
@@ -119,7 +140,7 @@ func myFunction() {
 }
 ```
 
-# 7. 运算符
+# 8. 运算符
 
 - 算术运算符
 
@@ -161,7 +182,7 @@ func myFunction() {
 !	not	!(x==y) 为 true
 ```
 
-# 8. 条件语句
+# 9. 条件语句
 
 - 通常在写代码时，您总是需要为不同的决定来执行不同的动作。您可以在代码中使用条件语句来完成该任务。
 
@@ -207,7 +228,7 @@ else
 
 - match(switch) 语句 - 使用该语句来选择多个代码块之一来执行
 
-# 9. 循环语句
+# 10. 循环语句
 
 - 循环可以将代码块执行指定的次数，如果您希望一遍又一遍地运行相同的代码，并且每次的值都不同，那么使用循环是很方便的
 - for
@@ -215,7 +236,7 @@ else
 - break 语句跳出循环后，会继续执行该循环之后的代码（如果有的话）
 - continue 语句中断循环中的迭代，如果出现了指定的条件，然后继续循环中的下一个迭代
 
-# 10. 数组和字典的遍历
+# 11. 数组和字典的遍历
 
 - 数组遍历
 
@@ -252,7 +273,7 @@ func dictionaryIterator():
 		print("value:" + value as String)	
 ```  
 
-# 11. 静态变量和静态方法
+# 12. 静态变量和静态方法
 
 - const变量（静态变量）
 
@@ -267,7 +288,7 @@ static func getAnswer():
 	return ANSWER
 ```
 
-# 12. 对象
+# 13. 对象
 
 - 真实生活中的对象，属性和方法
 - 真实生活中，一辆汽车是一个对象。对象有它的属性，如重量和颜色等，方法有启动停止等
@@ -290,12 +311,12 @@ class Animal:
 		pass
 ```
 
-# 12. 调试
+# 14. 调试
 
 - 在编写 GdScript 时，如果没有调试工具将是一件很痛苦的事情。
 - 你的代码可能包含语法错误，逻辑错误，有了调试工具，这些错误比较容易发现。
 
-# 13. 参考资料
+# 15. 参考资料
 
 - [godot官方文档](https://docs.godotengine.org/en/stable/getting_started/scripting/gdscript/gdscript_basics.html)
 - [Godot Tutorials的GDScript Fundamentals Tutorial Series，youtube播放量最高的godot教程视频](https://www.youtube.com/watch?v=JJQa3xrRNM0&list=PLJ690cxlZTgL4i3sjTPRQTyrJ5TTkYJ2_)
