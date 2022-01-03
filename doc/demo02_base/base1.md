@@ -90,31 +90,26 @@ export(Color, RGB) var g
 
 - 函数是可以简单的理解为当它被调用时执行的可重复使用的代码块。
 - 函数就是包裹在花括号中的代码块，前面使用了关键词 func，当调用该函数时，会执行函数内的代码。
+- 空函数需要使用pass关键字
 
 ```
-func sayHello()
-{
+func sayHello():
     # 执行代码
-}
 ```
 
 - 调用带参数的函数，在调用函数时，您可以向其传递值，这些值被称为参数。
 
 ```
-func sayHello(param1， param2)
-{
+func sayHello(param1， param2):
     # 执行代码
-}
 ```
 
 - 带有返回值的函数，有时，我们会希望函数将值返回调用它的地方，通过使用 return 语句就可以实现。
 
 ```
-func sayHello(param1， param2)
-{
+func sayHello(param1， param2):
     # 执行代码
     return x
-}
 ```
 
 # 7.变量的作用域
@@ -123,10 +118,9 @@ func sayHello(param1， param2)
 
 ```
 # 此处不能调用 carName 变量
-func myFunction() {
+func myFunction():
     var carName = "Volvo";
     # 函数内可调用 carName 变量
-}
 ```
 
 - 全局变量，变量在函数外定义，即为全局变量，整个脚本文件中都可以使用
@@ -135,9 +129,8 @@ func myFunction() {
 var carName = " Volvo";
  
 # 此处可调用 carName 变量
-func myFunction() {
+func myFunction():
     # 函数内可调用 carName 变量
-}
 ```
 
 # 8. 运算符
@@ -190,40 +183,28 @@ func myFunction() {
 - if 语句 - 只有当指定条件为 true 时，使用该语句来执行代码
 
 ```
-if (condition)
-{
+if (condition):
     当条件为 true 时执行的代码
-}
 ```
 
 - if...else 语句 - 当条件为 true 时执行代码，当条件为 false 时执行其他代码
 
 ```
-if (condition)
-{
+if (condition):
     当条件为 true 时执行的代码
-}
-else
-{
+else:
     当条件不为 true 时执行的代码
-}
 ```
 
 - if...else if....else 语句- 使用该语句来选择多个代码块之一来执行
 
 ```
-if (condition1)
-{
+if (condition1):
     当条件 1 为 true 时执行的代码
-}
-else if (condition2)
-{
+else if (condition2):
     当条件 2 为 true 时执行的代码
-}
-else
-{
+else:
   当条件 1 和 条件 2 都不为 true 时执行的代码
-}
 ```
 
 - match(switch) 语句 - 使用该语句来选择多个代码块之一来执行
