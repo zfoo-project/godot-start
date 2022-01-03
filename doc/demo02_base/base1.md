@@ -52,7 +52,7 @@ z=x+y
 在 godot 中，这些字母被称为变量。
 ```
 
-- gds有5种基础类型
+- gds数据类型分类
     - bool，一个字节，默认为false
     - int(同C++和Java long)，8个字节，默认为0
     - float(同C++和Java double)，8个字节，默认为0
