@@ -105,6 +105,7 @@ func sayHello(param1， param2):
 ```
 
 - 带有返回值的函数，有时，我们会希望函数将值返回调用它的地方，通过使用 return 语句就可以实现。
+- return方法可以指定返回的类型
 
 ```
 func sayHello(param1， param2):
