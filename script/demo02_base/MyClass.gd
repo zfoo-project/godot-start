@@ -58,7 +58,7 @@ func typeInfo():
 	print(StringUtils.format(template, [TYPE_INT, typeof(b), b]))
 	print(StringUtils.format(template, [TYPE_INT, typeof(c), c]))
 	print(StringUtils.format(template, [TYPE_STRING, typeof(s), s]))
-	print(StringUtils.format(template, [TYPE_ARRAY, typeof(arr), arr]))
+	# print(StringUtils.format(template, [TYPE_ARRAY, typeof(arr), arr]))
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(dict), dict]))
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(FOOD), FOOD]))
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(FOOD.GOOD), FOOD.GOOD]))
