@@ -27,7 +27,7 @@ func _ready():
 	var myClass = MyClass.new()
 	print(myClass.to_string())
 	
-	print("类型信息--------------------------------")
+	print("数据类型信息--------------------------------")
 	myClass.typeInfo()
 	
 	print("基础语法if else--------------------------------")

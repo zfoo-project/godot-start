@@ -62,6 +62,7 @@ func typeInfo():
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(dict), dict]))
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(FOOD), FOOD]))
 	print(StringUtils.format(template, [TYPE_DICTIONARY, typeof(FOOD.GOOD), FOOD.GOOD]))
+	# 在java中类似于this
 	print(self is Node)
 	print(a is Dog) # 类似于instanceof
 

@@ -12,9 +12,9 @@
 ![Image text](image/gc2.png)
 ![Image text](image/gc3.png)
 
-- 引用计数既保留了性能，也保证了更加高效的性能
-  ![Image text](image/太极.png)
-
 # 3. 引用计数
 
 - 可以使用unreference去释放引用计数的对象
+
+- 引用计数既保留了性能，也保证了更加高效的性能
+  ![Image text](image/太极.png)
