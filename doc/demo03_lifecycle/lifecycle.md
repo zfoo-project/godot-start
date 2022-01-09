@@ -29,9 +29,14 @@ Engine.target_fps = 120
 
 ![Image text](image/delta.png)
 ![Image text](image/delta-1.png)
+
+# 3. 节点的生命周期
+
 ![Image text](image/godot_process.jpg)
 ![Image text](image/godot_node.jpg)
 ![Image text](image/godot_lifecycle.jpg)
+
+# 4. process和physics_process
 
 ![Image text](image/process.png)
 ![Image text](image/process-1.png)
