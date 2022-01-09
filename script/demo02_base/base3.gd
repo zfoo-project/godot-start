@@ -5,8 +5,8 @@ const B = preload("res://script/demo02_base/B.gd")
 
 func _ready():
 	#referenceTest()
-	referenceCycleTest()
-	#referenceUnreference1Test()
+	#referenceCycleTest()
+	referenceUnreference1Test()
 	#referenceUnreference2Test()
 	pass
 
@@ -28,12 +28,11 @@ func referenceUnreference1Test():
 	a.b = b
 	b.a = a
 	a.unreference()
-	b.unreference()
 
 func referenceUnreference2Test():
 	var a = A.new()
 	var b = B.new()
 	a.b = b
 	b.a = a
-	a.b.unreference()
-	b.a.unreference()
+	a.unreference()
+	b.unreference()
