@@ -13,7 +13,7 @@ func _ready():
 	# that all children nodes have also entered the Scene Tree,
 	# and became active.
 	print("sub node1 _ready")
-	nodeUsage()
+	#nodeUsage()
 
 func _exit_tree():
 	# When the node exits the Scene Tree, this function is called.
