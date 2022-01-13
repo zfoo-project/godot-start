@@ -2,11 +2,6 @@ extends Node2D
 
 
 func _ready():
-	createNodeByScript()
-	pass
-	
-	
-func createNodeByScript():
 	# new一个Sprite节点
 	var sprite = Sprite.new()
 	
@@ -23,8 +18,8 @@ func createNodeByScript():
 	
 	# 添加到当前的场景中
 	add_child(sprite)
-	pass # Replace with function body.	
-
+	pass
+	
 
 
 func _process(delta):
