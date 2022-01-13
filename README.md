@@ -1,5 +1,9 @@
 # Godot Start
 
-- godot engine utils and example
+- godot engine utils and sample, example, tutorial, learning, course
 
-- 关于godot的基本使用示例
+
+- 这是一个关于godot的基本使用示例的工程项目，[B站配套视频教程](https://www.bilibili.com/video/BV14Y411h7Po)
+
+
+- godot start学习交流qq群，710511812
