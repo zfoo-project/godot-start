@@ -13,7 +13,6 @@
 ```
 
 ![Image text](image/scene-tree.png)
-![Image text](image/场景循环.png)
 
 # 2. 帧率
 
@@ -28,6 +27,7 @@
 Engine.target_fps = 120
 ```
 
+![Image text](image/场景循环.png)
 ![Image text](image/场景帧.png)
 
 - delta time上一帧的间隔
