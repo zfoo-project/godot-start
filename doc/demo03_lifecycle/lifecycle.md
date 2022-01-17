@@ -104,3 +104,40 @@ var subNode4 = get_tree().root.find_node("SubNode2", true, false)
 ![Image text](image/physics.png)
 ![Image text](image/physics-1.png)
 
+# 6. Parent和Owner
+
+- Parent
+    - 一个节点的Parent就是场景树上它的父级
+
+- Owner
+    - 如果不修改默认Owner的话，可以把它视为节点所在场景的顶部节点，如果该节点本身就是顶部节点那么它的Owner为null
+
+
+- 静态场景结构中默认的Owner
+
+![Image text](image/owner01.png)
+
+```
+extends Node
+
+class_name TestNode
+
+func _ready():
+	var parent_name = "NULL"
+	var owner_name = "NULL"
+	if get_parent() != null:
+		parent_name = get_parent().name
+	if owner != null:
+		owner_name = owner.name
+	print(name + "'s parent is <" + parent_name + "> and it's owner is <" + owner_name + ">" )
+	
+```
+
+```
+node_3's parent is <node_2> and it's owner is <node_0>
+node_2's parent is <node_1> and it's owner is <node_0>
+node_1's parent is <node_0> and it's owner is <node_0>
+node_0's parent is <root> and it's owner is <NULL>
+```
+
+- 动态创建的节点的Owner是null
