@@ -76,7 +76,7 @@ GDScriptFunctionState 是记录一个协程状态的对象，实际上它就代�
 
 - yield的三种用法
 1. yield()和resmue()组合，yield()来挂起，用resmue()来恢复
-2. yield(节点对象N,信号S)的形式，把这个协程（即 GDScriptFunctionState）注册为 节点N上信号S的接收者，当 节点N发出信号S以后，函数会恢复执行。
+2. yield(对象,信号S)的形式，把这个协程（即 GDScriptFunctionState）注册为 节点N上信号S的接收者，当 节点N发出信号S以后，函数会恢复执行。
 3. yield(协程对象C,"completed")的形式，协程失效（即GDScriptFunctionState的is_valid为false）以后，它会释放一个"completed"信号，用这个信号恢复上一层协程。
 
 
