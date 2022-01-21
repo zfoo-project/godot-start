@@ -6,8 +6,8 @@
 ![Image text](image/坐标系-ps.JPG)
 
 ```
-因为刚开始的时候有点疑惑，godot的坐标系，原点既然在左上角。unity，cocos的2d原点都在左下角，左下角的2d坐标系感觉很复合习惯。
-unity的坐标系就很符合数学里面的象限，刚开始有点不适应。
+因为刚开始的时候有点疑惑，godot的坐标系，原点既然在左上角。
+unity，cocos的2d原点都在左下角，就很符合数学里面的象限，左下角的2d坐标系感觉很复合习惯。
 
 后来了解到，计算机屏幕是从左上角开始刷新的，2d坐标系左上角为原点可以屏幕坐标系吻合可以提升一点效率。  
 
@@ -41,8 +41,8 @@ Node2D及其子节点的位置可以使用position和gloabl_position来控制。
 # 4. 基本组件
 
 - CanvasItem，
-![Image text](./image/component1.png)
-![Image text](./image/component2.png)
-![Image text](./image/component3.png)
-![Image text](./image/component4.png)
-![Image text](./image/component5.png)
+  ![Image text](./image/component1.png)
+  ![Image text](./image/component2.png)
+  ![Image text](./image/component3.png)
+  ![Image text](./image/component4.png)
+  ![Image text](./image/component5.png)
