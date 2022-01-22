@@ -1,5 +1,7 @@
 extends Node2D
 
+const StringUtils = preload("res://zfoo/util/StringUtils.gd")
+
 var camera1: Camera2D
 var camera2: Camera2D
 var camera3: Camera2D
@@ -15,14 +17,14 @@ func _ready() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	timerCounter += delta
-	if(int(timerCounter) == 1):
+	timerCounter += 1
+	if(timerCounter == 100):
 		switchCamera1()
-	if(int(timerCounter) == 2):
+	if(timerCounter == 200):
 		switchCamera2()
-	if(int(timerCounter) == 3):
+	if(timerCounter == 300):
 		switchCamera3()
-	if(int(timerCounter) == 4):
+	if(timerCounter == 400):
 		switchCamera4()
 		timerCounter = 0
 	
@@ -30,12 +32,24 @@ func _physics_process(delta: float) -> void:
 
 func switchCamera1() -> void:
 	camera1.current = true;
+	print("camera1---------------------------")
+	postionTest()
 
 func switchCamera2() -> void:
 	camera2.current = true;
+	print("camera2---------------------------")
+	postionTest()
 
 func switchCamera3() -> void:
 	camera3.current = true;
+	print("camera3---------------------------")
+	postionTest()
 
 func switchCamera4() -> void:
 	camera4.current = true;
+	print("camera4---------------------------")
+	postionTest()
+
+func postionTest():
+	print(StringUtils.format("全局坐标[{}]", [$icon.global_position]))
+	print(StringUtils.format("屏幕坐标[{}]", [$icon.get_global_transform_with_canvas().get_origin()]))

@@ -1,5 +1,7 @@
 extends Sprite
 
+const StringUtils = preload("res://zfoo/util/StringUtils.gd")
+
 
 var gameWidth: int
 var gameHeight: int
@@ -9,10 +11,22 @@ var spriteHeight: int
 
 
 func _enter_tree():
+	windowPositionTest()
 	# textureTest()
 	# positionTest()
 	pass
 
+
+# 屏幕坐标系
+func windowPositionTest():
+	print(StringUtils.format("屏幕大小[{}]", [OS.window_size]))
+	print(StringUtils.format("屏幕位置[{}]", [OS.window_position]))
+	
+	OS.window_position = Vector2(100, 100)
+	# OS.window_fullscreen = true
+	print(get_global_transform_with_canvas().get_origin())
+	print(global_position)
+	pass
 
 # 坐标点测试用例
 func positionTest():
