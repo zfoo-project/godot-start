@@ -64,9 +64,27 @@ Node2D及其子节点的位置可以使用position和gloabl_position来控制。
 
 # 4. 基本组件
 
-- CanvasItem，
+- CanvasItem节点，CanvasItem -> Node -> Object
+- Canvas是画布的意思，所以CanvasItem代表了就是可以被绘制节点，可以设置可视化界面和材质的颜色
+- 所有的2D节点和GUI节点都继承于CanvasItem节点
   ![Image text](./image/component1.png)
+
+
+- Sprite节点，Node2d -> CanvasItem -> Node -> Object
+- 用来显示一张图片
   ![Image text](./image/component2.png)
+
+
+- Texture类，Resource -> Reference -> Object
+- Texture 贴图，附加到物体表面的贴图，实际上就是包含一张Image图片
+- 可以用在3D模型中当作贴图，或者2D的Sprite中当作图片，或者GUI的背景
   ![Image text](./image/component3.png)
+
+
+- Image类，Resource -> Reference -> Object
+- 包含了图片的数
   ![Image text](./image/component4.png)
+
+
+- 总结
   ![Image text](./image/component5.png)

@@ -12,8 +12,8 @@ var spriteHeight: int
 
 func _enter_tree():
 	windowPositionTest()
-	# textureTest()
 	# positionTest()
+	# textureTest()
 	pass
 
 
@@ -22,10 +22,9 @@ func windowPositionTest():
 	print(StringUtils.format("屏幕大小[{}]", [OS.window_size]))
 	print(StringUtils.format("屏幕位置[{}]", [OS.window_position]))
 	
+	# 设置游戏屏幕的位置
 	OS.window_position = Vector2(100, 100)
 	# OS.window_fullscreen = true
-	print(get_global_transform_with_canvas().get_origin())
-	print(global_position)
 	pass
 
 # 坐标点测试用例
@@ -35,22 +34,6 @@ func positionTest():
 	print(to_global(position))
 	print(to_local(global_position))
 	pass
-
-# 纹理测试用例
-func textureTest():
-	var texture = get_texture()
-	var image = texture.get_data()
-	print(offset)
-	print("texture type: ", texture)
-	print("height: ", texture.get_height())
-	print("width: ", texture.get_width())
-	print("Image data property: ", image.data)
-
-	# 无法直接编辑图片
-	image.shrink_x2()
-	print("new image data property",image.data)
-	#这样做会破坏项目的资源，使资源变得混乱
-	#image.save_png("C:\\Users\\jaysunxiao\\Desktop\\newImage.png")
 
 func _physics_process(delta):
 	setupSprite()
@@ -80,3 +63,22 @@ func positionBottomCenter() -> void:
 func positionLeftCenter() -> void:
 	self.position.x = spriteWidth / 2
 	self.position.y = gameHeight / 2
+	
+	
+
+# 纹理测试用例
+func textureTest():
+	var texture = get_texture()
+	var image = texture.get_data()
+	print(offset)
+	print("texture type: ", texture)
+	print("height: ", texture.get_height())
+	print("width: ", texture.get_width())
+	print("Image data property: ", image.data)
+
+	# 无法直接编辑图片
+	image.shrink_x2()
+	print("new image data property",image.data)
+	#这样做会破坏项目的资源，使资源变得混乱
+	image.save_png("C:\\Users\\jaysunxiao\\Desktop\\newImage.png")
+	pass
