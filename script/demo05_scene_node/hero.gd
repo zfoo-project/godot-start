@@ -17,14 +17,20 @@ func _enter_tree():
 	pass
 
 
+func _physics_process(delta):
+	setupGameWindow()	
+	setupSprite()
+	positionTopCenter()
+	pass
+
 # 屏幕坐标系
 func windowPositionTest():
+	# 设置游戏屏幕的位置
+	# OS.window_position = Vector2(100, 100)
+	# OS.window_fullscreen = true
+	
 	print(StringUtils.format("屏幕大小[{}]", [OS.window_size]))
 	print(StringUtils.format("屏幕位置[{}]", [OS.window_position]))
-	
-	# 设置游戏屏幕的位置
-	OS.window_position = Vector2(100, 100)
-	# OS.window_fullscreen = true
 	pass
 
 # 坐标点测试用例
@@ -35,34 +41,34 @@ func positionTest():
 	print(to_local(global_position))
 	pass
 
-func _physics_process(delta):
-	setupSprite()
-	setupGameWindow()	
-	positionTopCenter()
+
+func setupGameWindow():
+	gameWidth = OS.window_size.x
+	gameHeight = OS.window_size.y
 
 func setupSprite():
 	spriteWidth = texture.get_width()
 	spriteHeight = texture.get_height()
 
-func setupGameWindow():
-	gameWidth = OS.window_size.x
-	gameHeight = OS.window_size.y
 	
 func positionTopCenter() -> void:
+	#get_parent().position.x = 0
+	#get_parent().position.y = 0
+	#self.global_position
 	self.position.x = gameWidth / 2
 	self.position.y = spriteHeight / 2
 
 func positionCenter() -> void:
-	self.position.x = gameWidth / 2
-	self.position.y = gameHeight / 2
+	self.global_position.x = gameWidth / 2
+	self.global_position.y = gameHeight / 2
 
 func positionBottomCenter() -> void:
-	self.position.x = gameWidth / 2
-	self.position.y = gameHeight - spriteHeight / 2
+	self.global_position.x = gameWidth / 2
+	self.global_position.y = gameHeight - spriteHeight / 2
 
 func positionLeftCenter() -> void:
-	self.position.x = spriteWidth / 2
-	self.position.y = gameHeight / 2
+	self.global_position.x = spriteWidth / 2
+	self.global_position.y = gameHeight / 2
 	
 	
 
