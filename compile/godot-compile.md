@@ -60,7 +60,7 @@ scons -j6 platform=windows            # 多线程编译
 scons platform=windows bits=32        # 软件是64位还是32位置，bits=64 或者 bits=32
 ```
 
-- 生产版本发布，默认打包是debug+tools，scons platform=windows target=release
+- 生产版本发布，默认打包是debug+tools
 
 ```
 target=release_debug
