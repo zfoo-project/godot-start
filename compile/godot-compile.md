@@ -101,8 +101,6 @@ opt是optimized production template的缩写，是优化过后的模板，这个
 
 ```
 scons platform=windows use_lto=yes              # MinGW的编译环境，使用这个参数可以让发布的体积更加小，但是需要更多的机器内存
-
-scons platform=windows vsproj=yes               # generate the solution
 ```
 
 # Android Compile
@@ -117,3 +115,23 @@ scons -j15 platform=windows use_mingw=yes
 
 scons -j15 platform=android use_mingw=yes target=release android_arch=arm64v8
 ```
+
+# 使用Visual Studio调试Godot的源代码
+
+- scons platform=windows vsproj=yes
+
+```
+使用命令创建vs的解决方案
+```
+
+- 再使用Visual Studio双击打开sln解决方案
+
+- 设置调试参数
+  ![Image text](image/vs12.JPG)
+
+# 使用Clion调试Godot的源代码
+
+- 使用Clion打开项目的文件（根目录）
+- Clion会让你选择一个CMake文件，选择platform/android/java/nativeSrcsConfigs/CMakeLists.txt
+- 在Terminal控制台使用命令打开godot编辑器，godot.windows.tools.64.exe --editor --path D:/github/godot-project-test
+- 然后Attache到godot的process
