@@ -25,7 +25,7 @@ pip install --upgrade requests
 
 - 安装godot的项目依赖管理工具SCons
 - pip install SCons --proxy="http://127.0.0.1:10809"
--
+- 在命令行输入scons，看有没有反应，没有安装会提示没有这个命令
 
 # Visual Studio
 
