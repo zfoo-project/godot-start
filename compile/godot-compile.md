@@ -135,3 +135,5 @@ scons -j15 platform=android use_mingw=yes target=release android_arch=arm64v8
 - Clion会让你选择一个CMake文件，选择platform/android/java/nativeSrcsConfigs/CMakeLists.txt
 - 在Terminal控制台使用命令打开godot编辑器，godot.windows.tools.64.exe --editor --path D:/github/godot-project-test
 - 然后Attache到godot的process
+
+- [godot C++源代码，编译，打包，调试视频教程](https://www.bilibili.com/video/BV1cU4y1o7ye/)
