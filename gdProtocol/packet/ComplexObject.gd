@@ -3,6 +3,7 @@
 #
 # @author jaysunxiao
 # @version 3.0
+
 # byte类型，最简单的整形
 var a # byte
 # byte的包装类型
@@ -206,7 +207,7 @@ static func write(buffer, packet):
 static func read(buffer):
 	if (!buffer.readBool()):
 		return null
-	var packet = buffer.newInstance(100)
+	var packet = buffer.newInstance(PROTOCOL_ID)
 	var result19 = buffer.readByte()
 	packet.a = result19
 	var result20 = buffer.readByte()

@@ -92,6 +92,7 @@ func test():
 	
 	var newByteBuffer = ByteBuffer.new()
 	ProtocolManager.write(newByteBuffer, packet);
+	print(newByteBuffer.getWriteOffset())
 	
 	var newPacket = ProtocolManager.read(newByteBuffer);
 	print(newPacket)
