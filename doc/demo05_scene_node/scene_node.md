@@ -1,6 +1,6 @@
 # 1. 屏幕窗口设置
 
-- Project | Editor Settings | Editor，设置控制台是否隐藏
+- Editor | Editor Settings | Editor，设置控制台是否隐藏
   ![Image text](image/console.JPG)
 
 - Editor | Editor Settings | Window Placement，设置编辑器运行游戏窗口的位置
