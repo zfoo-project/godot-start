@@ -147,8 +147,6 @@ func positionTest():
 
 - 一个游戏可以包含多个场景，但是一个场景中必须有一个根节点，一个根节点可以包含多个不重名的子节点（unity的子节点可以同名），不同名更加符合习惯，为godot点赞。
 
-- fix：纠正P25说的深度优先遍历顺序，绘制节点的顺序应该是广度优先遍历
-
 # 7. Image类的使用
 
 - CanvasItem节点，CanvasItem -> Node -> Object
