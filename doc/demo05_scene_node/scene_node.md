@@ -147,7 +147,7 @@ func positionTest():
 
 - 一个游戏可以包含多个场景，但是一个场景中必须有一个根节点，一个根节点可以包含多个不重名的子节点（unity的子节点可以同名），不同名更加符合习惯，为godot点赞。
 
-# 7. Image类的使用
+# 7. Sprite节点和Image类的使用
 
 - CanvasItem节点，CanvasItem -> Node -> Object
 - Canvas是画布的意思，所以CanvasItem代表了就是可以被绘制节点，可以设置可视化界面和材质的颜色
