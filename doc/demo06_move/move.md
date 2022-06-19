@@ -8,6 +8,12 @@
 ![Image text](image/vector06.JPG)
 ![Image text](image/vector07.JPG)
 ![Image text](image/vector08.JPG)
+
+- a·b=||a||||b||cosθ, 这个是向量的内积，又叫数量积，又叫点积。
+- axb = ||a||||b||sinθ，这个是向量的外积，又叫向量积，又叫叉积。
+
+![Image text](image/vector11.png)
+
 ![Image text](image/vector09.JPG)
 ![Image text](image/vector10.JPG)
 
