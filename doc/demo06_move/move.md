@@ -11,7 +11,8 @@
 ![Image text](image/vector09.JPG)
 ![Image text](image/vector10.JPG)
 
-# 2. 控制物体移动
+# 2. 通过输入事件来控制物体移动
+
 ![Image text](image/move1.png)
 ![Image text](image/move2.png)
 ![Image text](image/move3.png)
