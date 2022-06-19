@@ -168,7 +168,7 @@ func positionTest():
 
 
 - Image类，Resource -> Reference -> Object
-- 包含了图片的数
+- 包含了图片的数据
   ![Image text](./image/component4.png)
 
 
