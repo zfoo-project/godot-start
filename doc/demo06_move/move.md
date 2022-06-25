@@ -17,6 +17,8 @@
 ![Image text](image/vector09.JPG)
 ![Image text](image/vector10.JPG)
 
+- 常量以godot游戏引擎为准，Vector是我从unity文档复制过来的
+
 # 2. 通过输入事件来控制物体移动
 
 - 事件系统是游戏开发过程中需要涉及到交互常用的功能。
