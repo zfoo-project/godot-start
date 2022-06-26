@@ -36,7 +36,7 @@
 
 - Area2D，一块区域，能够检测到物体的碰撞，但是不会做任何操作
 
-- 碰撞检测Layer和Mask，Layer表明当前刚体属于那一层，Mask表面当前
+- 碰撞检测Layer和Mask，Layer表明当前刚体属于那一层，Mask表面当前物体的遮罩
 
 ![Image text](image/collision-9.JPG)
 ![Image text](image/collision-10.JPG)
