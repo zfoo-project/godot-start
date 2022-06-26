@@ -12,7 +12,7 @@
 ![Image text](image/collision-5.png)
 ![Image text](image/collision-6.png)
 
-# 2. 刚体
+# 2. RigidBody
 
 - 刚体是组成物理世界的基本对象，你可以将刚体想象成一个你不能看到（绘制）也不能摸到（碰撞）的带有属性的物体。
 
@@ -26,14 +26,17 @@
 - torque，扭矩
 - damp，衰减系数，值越大物体移动越慢，可以用来模拟空气摩擦力等效果。
 
-# 3. 物理实战
+# 3. 刚体
 
 - RigidBody，动态刚体，有质量，可以设置速度，会受到重力影响。
 
 - Kinematic，运动刚体，零质量，可以设置速度，不会受到重力的影响，但是可以设置速度来进行移动。
-  
+
 - Static，静态刚体，零质量，零速度，即不会受到重力或速度影响，但是可以设置他的位置来进行移动
 
 - Area2D，一块区域，能够检测到物体的碰撞，但是不会做任何操作
 
-- 碰撞检测Layer和Mask
+- 碰撞检测Layer和Mask，Layer表明当前刚体属于那一层，Mask表面当前
+
+![Image text](image/collision-9.JPG)
+![Image text](image/collision-10.JPG)
