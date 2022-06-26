@@ -12,7 +12,7 @@
 ![Image text](image/collision-5.png)
 ![Image text](image/collision-6.png)
 
-# 2. RigidBody
+# 2. RigidBody节点
 
 - 刚体是组成物理世界的基本对象，你可以将刚体想象成一个你不能看到（绘制）也不能摸到（碰撞）的带有属性的物体。
 
@@ -26,7 +26,7 @@
 - torque，扭矩
 - damp，衰减系数，值越大物体移动越慢，可以用来模拟空气摩擦力等效果。
 
-# 3. 刚体
+# 3. 刚体实战
 
 - RigidBody，动态刚体，有质量，可以设置速度，会受到重力影响。
 
