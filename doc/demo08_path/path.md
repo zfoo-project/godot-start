@@ -1,21 +1,38 @@
-# 组件的使用
-- Path2D
+# 1. Line2D 节点
+
+- 在 2D 空间中通过几个点连成的线，可以通过代码动态添加和删除
+
+```
+注意：默认情况下，Godot一次最多只能绘制 4,096 个多边形点。
+要增加这个限制，请打开项目设置，修改下面两个设置
+ProjectSettings.rendering/limits/buffers/canvas_polygon_buffer_size_kb 
+ProjectSettings.rendering/limits/buffers/canvas_polygon_index_buffer_size_kb。
+```
+
+# 2. RemoteTransform2D 节点
+
+- RemoteTransform2D，类似与设计模式中的代理模式，代理一个节点
+
+```
+RemoteTransform2D pushes its own Transform2D to another CanvasItem derived Node in the scene.
+
+It can be set to update another Node's position, rotation and/or scale. It can use either global or local coordinates.
+```
+
+# 3. Path2D 节点
+
+- Path2D，包含了一个曲线路径数据
+
 ```
 Contains a Curve2D path for PathFollow2D nodes to follow，Describes a Bézier curve in 2D space.
 ```
 
-- PathFollow2D
+- PathFollow2D，要和Path2D结合在一起使用
+
 ```
 This node takes its parent Path2D, and returns the coordinates of a point within it, given a distance from the first vertex.
 
 
 It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node.
 The descendant nodes will then move accordingly when setting an offset in this node.
-```
-
-- RemoteTransform2D，类似与设计模式中的代理模式
-```
-RemoteTransform2D pushes its own Transform2D to another CanvasItem derived Node in the scene.
-
-It can be set to update another Node's position, rotation and/or scale. It can use either global or local coordinates.
 ```
