@@ -36,3 +36,27 @@ This node takes its parent Path2D, and returns the coordinates of a point within
 It is useful for making other nodes follow a path, without coding the movement pattern. For that, the nodes must be children of this node.
 The descendant nodes will then move accordingly when setting an offset in this node.
 ```
+
+# 4. Tilemap 节点
+
+- tilemap的由tileset组成，tileset由tile一个个单个图块组成
+
+- 基本上通过熟练使用get_cell、set_cell、world_to_map这些函数就可以解决大多数普通关卡制作需求
+
+- 自动填充bitmask
+- 如图所示，这是一个3×3的autotile（自动图块），如果我还没有设置bitmask（位遮罩），那么此时放置图块时效果如下图所示
+- 可以看到，如果没有设置bitmask，那么放置图块时只显示左上角的部分
+
+  ![Image text](image/path1.jpg)
+  ![Image text](image/path2.gif)
+
+- 接下来我把bitmask设置在中心区域，如图所示，接下来，我再放置autotile时，效果就不一样了，效果如下图所示：
+
+  ![Image text](image/path3.jpg)
+  ![Image text](image/path4.gif)
+
+- 可以看到，图中其它图块都是左上角，但中间的部分改变了，接下来我再把bitmask的范围加大，接触到相邻的图块，接下来效果就又不一样了
+- 可以看到，当放置了一圈图块后，在中间添加图块时，相邻的图块全都改变了
+
+  ![Image text](image/path5.jpg)
+  ![Image text](image/path6.gif)
