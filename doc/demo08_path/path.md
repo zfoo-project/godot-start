@@ -60,3 +60,18 @@ The descendant nodes will then move accordingly when setting an offset in this n
 
   ![Image text](image/path5.jpg)
   ![Image text](image/path6.gif)
+
+# 5. Navigation2D 节点
+
+- Navigation2D 节点可以实现自动寻路
+- 目前使用最广泛的是 AStar 算法，在Godot中，Navigation2D完全的集成了此算法，让使用变得易常简单
+
+![Image text](image/path7.gif)
+
+- Collision 和 Navigation 。字面意思， Collision区域将是无法通过的，而Navigation可以，且寻路总是在Navigation的区域里进行。
+
+- 引擎的作用就是为了减少大量复杂的工作，就像AStar寻路一样，在Godot中，可以非常简单的使用，就像它的函数名一样 simple 。
+
+- 当然，游戏总不会这么简单容易，可能有非常多的情况与限制，都需要针对性处理才能满足需求。
+
+- 参考文章 [Navigation2D:寻路-Godot3-2D教程](https://zhuanlan.zhihu.com/p/356255064)
