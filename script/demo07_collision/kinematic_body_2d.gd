@@ -25,6 +25,6 @@ func _physics_process(delta):
 	
 	velocity = velocity.normalized() * speed
 	# false这个选项参数看意思是把无限惯性关了，这个关了之后就不会向碰撞的刚体施加作用力，需要你自己去写
-	var info: KinematicCollision2D = move_and_collide(velocity * delta)
+	var info: KinematicCollision2D = move_and_collide(velocity * delta, false)
 	if info != null:
 		print(info.collider.name)	
