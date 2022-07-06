@@ -19,16 +19,31 @@ var colorArray: PoolColorArray = PoolColorArray([Color(1,1,1,1),Color(1,1,1,1),C
 # For Draw_String
 var dynamic_font = DynamicFont.new()
 
+var texture: Texture = null
+
 func _ready() -> void:
 	# For Draw_String
 	dynamic_font.font_data = load("res://scene/demo09_canvas/BarlowCondensed-Bold.ttf")
 	dynamic_font.size = 64
+	texture = load("res://icon.png")
+
+var count = 0
 
 func _draw() -> void:
+	print("start drawing")
 	draw_circle(Vector2(100,100), circleRadius, whiteColor)
 	draw_line(Vector2(0,0),Vector2(100,100),whiteColor)
 	draw_multiline(multiLine, whiteColor)
 	draw_rect(rect, whiteColor, false) # filled is false
 	draw_primitive(pointsArray,colorArray, pointsArray)
 	draw_string(dynamic_font, Vector2(600,500), 'I draw good!')
+	if count >= 90:
+		draw_texture(texture, Vector2(400,400))
 # For Draw_String
+
+
+func _process(delta):
+	count += 1
+	if count == 90:
+		# draw_texture(texture, Vector2(400,400))
+		update()

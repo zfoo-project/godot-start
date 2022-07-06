@@ -1,3 +1,5 @@
+# 1. CanvasItem之draw和update
+
 ![Image text](image/canvas1.png)
 ![Image text](image/canvas2.png)
 ![Image text](image/canvas3.png)
