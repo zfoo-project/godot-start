@@ -7,7 +7,8 @@ var whiteColor: Color = Color(1,1,1,1)
 var circleRadius: float = 10
 
 # For Draw_Multiline
-var multiLine: PoolVector2Array = PoolVector2Array([Vector2(200,300),Vector2(300,400),Vector2(300,400),Vector2(400,300)])
+var array: Array = [Vector2(200,300),Vector2(300,400),Vector2(300,400),Vector2(400,300)]
+var multiLine: PoolVector2Array = PoolVector2Array(array)
 
 # For Draw_Rect
 var rect: Rect2 = Rect2(200.0,300.0, 200.0,200.0)
