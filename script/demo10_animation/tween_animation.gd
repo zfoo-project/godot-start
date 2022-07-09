@@ -9,8 +9,4 @@ func _ready():
 	# 会在起始点和终点不断的插值计算
 	tween.follow_property(self, "position", get_position(), targetPosition, "position", 2.0, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT)
 	tween.start()
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	pass
