@@ -8,7 +8,7 @@
   ![Image text](image/canvas2.png)
 
 
-- CanvasItem是按树的树的广度优先遍历顺序绘制的
+- CanvasItem是按树的树的深度优先遍历顺序绘制的
   ![Image text](image/canvas3.png)
 
 
