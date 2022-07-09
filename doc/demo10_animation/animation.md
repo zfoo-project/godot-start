@@ -22,7 +22,7 @@ sprite解释，上世纪70年代，在德州电器公司，一个叫Daniel Hilli
 再加上可任意编辑的时间曲线和创新的移动轨迹编辑功能，能够让内容生产人员不写一行代码就制作出细腻的各种动态效果。
 ```
 
-# 2. 动画之Timer节点实现动画
+# 2. Timer节点实现动画
 
 - Timer节点，意思是计时器秒表，在godot中可以利用他的定时器特性来实现动画帧
 
@@ -38,7 +38,7 @@ one_shot ：是否是一次性，如果是，只会触发一次 timeout 信号
 autostart ：自动开始，载入场景后计时，也可以使用 start 方法手动开启
 ```
 
-# 3. 动画之Tween节点实现动画
+# 3. Tween节点实现动画
 
 - 在游戏开发过程中，我们一般使用 AnimationPlayer 节点来实现移动、缩放、颜色渐变等动画效果
 
@@ -70,13 +70,13 @@ Tween is more suited than AnimationPlayer for animations where you don't know th
 ![Image text](image/animation10.png)
 ![Image text](image/animation11.png)
 
-# 4. 动画之AnimationPlayer节点实现动画
+# 4. AnimationPlayer节点实现动画
 
 - AnimationPlayer是时间和属性的变化，是一种动画的表现
 
 ![Image text](image/animation12.png)
 
-# 5. 动画之AnimatedSprite节点实现动画
+# 5. AnimatedSprite节点实现动画
 
 - AnimatedSprite是序列帧的简便的用法
 
