@@ -3,7 +3,7 @@
 - godot 的 2D 动态光照
 - 首先看看 Demo 的预览效果。可以看到，当我们在 Demo 中移动光源的位置，小人和场景也会随之表现出不同光照的情景
 
-<video src="image/light1.mp4/trailer.mp4" controls="controls" width="640" height="320" autoplay="autoplay">
+<video src="image/light1.mp4" controls="controls" width="640" height="320" autoplay="autoplay">
 godot 的 2D 动态光照
 </video>
 
