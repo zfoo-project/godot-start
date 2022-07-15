@@ -3,9 +3,7 @@
 - godot 的 2D 动态光照
 - 首先看看 Demo 的预览效果。可以看到，当我们在 Demo 中移动光源的位置，小人和场景也会随之表现出不同光照的情景
 
-<video src="image/light1.mp4" controls="controls" width="640" height="320" autoplay="autoplay">
-godot 的 2D 动态光照
-</video>
+![Image text](image/light1.gif)
 
 - 那么它和普通的 Sprite 有什么区别呢? 通过对比不难看出它们的差别主要是集中在材质上面。小人使用了自定义的 mat_normal 材质
 
