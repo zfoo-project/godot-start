@@ -28,17 +28,20 @@
 - 需要注意的是，法线贴图在3D游戏中运用的更多一点，2D稍微少很多
 
 - 法线贴图的制作软件[laigter](https://github.com/azagaya/laigter)
-  ![Image text](image/laigter.JPG)
+
+![Image text](image/laigter.JPG)
 
 - godot中使用法线贴图非常的简单
-  ![Image text](image/set-normal-map.gif)
-  ![Image text](image/light-settings.gif)
-  ![Image text](image/simple-sprite-with-normal.gif)
+
+![Image text](image/set-normal-map.gif)
+![Image text](image/light-settings.gif)
+![Image text](image/simple-sprite-with-normal.gif)
 
 # 3. 光照和阴影LightOccluder2D
 
 - 光照是指光的照射，godot 中光照的实现模拟了光对真实世界的影响。在场景中添加光源可以使场景产生相应的光照和阴影效果，获得更好的视觉效果。
-  ![Image text](image/light_shadow_main.png)
+
+![Image text](image/light_shadow_main.png)
 
 # 4. 粒子系统
 
