@@ -22,3 +22,21 @@ __meta__ = {
 margin_right = 44.0
 margin_bottom = 20.0
 text = "Child"
+
+[node name="Control" type="Control" parent="."]
+margin_left = 55.1478
+margin_top = 233.954
+margin_right = 216.148
+margin_bottom = 344.954
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+margin_right = 105.0
+margin_bottom = 14.0
+rect_pivot_offset = Vector2( 75.7402, 10.9574 )
+text = "aaaaaaaaaaaaaav"
+__meta__ = {
+"_edit_use_anchors_": false
+}
