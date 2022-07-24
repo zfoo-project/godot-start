@@ -41,6 +41,13 @@
 
 # 3. GUI的锚点Anchor
 
+- 是一个点，锚点描述的是一个对象的Margin，相对于锚点的坐标
+- 锚点的left，top，right，bottom是相对于父节点的值
+- 主要是用于描述子节点相对于父节点的位置
+- 当对一个节点的子节点进行设置锚点时，子节点的锚点范围只能够是父节点的控件区域内。
+- 注意任何布局也都是相对于父窗口矩形的
+- **主要用于在GUI中描述子节点相对于父节点的位置**
+
 ![Image text](image/gui2.png)
 ![Image text](image/gui3.png)
 ![Image text](image/gui4.png)
