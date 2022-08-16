@@ -21,7 +21,7 @@
 - Rust难度非常大，语法复杂，https://github.com/godot-rust/godot-rust
 
 
-- Lus简单，https://github.com/perbone/luascript
+- Lua简单，https://github.com/perbone/luascript
 
 
 - JavaScript简单，https://github.com/godot-js/godot-js
