@@ -1,4 +1,4 @@
-# godot 可以调用外部的IDE进行脚本的编辑，这里记录一下相关的配置
+## godot 可以调用外部的IDE进行脚本的编辑，这里记录一下相关的配置
 
 - 工欲善其事必先利其器，一款好用的编辑器可以极大的提高开发效率
 - Godot 自带的代码编辑器对于代码提示使用起来比较难受、经常出现打完后不提示或者提示错误的情况，极度的不智能。
@@ -21,3 +21,13 @@
 C:/Program Files/JetBrains/IntelliJ
 {project} {file}:{line}
 ```
+
+## 使用不同版本的godot如何避免冲突
+
+- 在godot.exe的同级目录创建一个 ._sc_ 文件，这样不同版本的godot就可以使用不同的配置了
+
+## 屏幕常用
+
+- Editor | Editor Settings | Editor | Hide Console Window，设置控制台是否隐藏，3.5版本已经没有Hide Console Window这个选项了
+
+- Editor | Editor Settings | Run | Window Placement | Rect，设置编辑器运行游戏窗口的位置
