@@ -24,7 +24,11 @@ C:/Program Files/JetBrains/IntelliJ
 
 ## 使用不同版本的godot如何避免冲突
 
-- 在godot.exe的同级目录创建一个 ._sc_ 文件，这样不同版本的godot就可以使用不同的配置了
+- 在godot.exe的同级目录创建一个 ._sc_ 或者 _sc_ 文件，这样不同版本的godot就可以使用不同的配置了，后面godot将自动使用self-contained-mode模式
+
+- [self-contained-mode官方解释](https://docs.godotengine.org/en/latest/tutorials/io/data_paths.html#self-contained-mode)
+
+- [参考github相关讨论](https://github.com/godotengine/godot-proposals/issues/2474)
 
 ## 屏幕常用
 
