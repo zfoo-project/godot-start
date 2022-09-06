@@ -22,7 +22,7 @@ C:/Program Files/JetBrains/IntelliJ
 {project} {file}:{line}
 ```
 
-## 使用不同版本的godot如何避免冲突
+## 使用不同版本的godot如何避免版本冲突
 
 - 在godot.exe的同级目录创建一个 ._sc_ 或者 _sc_ 文件，这样不同版本的godot就可以使用不同的配置了，后面godot将自动使用self-contained-mode模式
 
