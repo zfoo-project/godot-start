@@ -21,6 +21,12 @@ pip list    # 已经安装的库
 pip install --upgrade requests
 ```
 
+- pip代理设置
+```
+# 没有任何配置的情况下，可以通过以下命令设置并自动创建配置文件：
+pip config set global.proxy http://127.0.0.1:10809
+```
+
 # SCons
 
 - 安装godot的项目依赖管理工具SCons
