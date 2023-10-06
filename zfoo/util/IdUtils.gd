@@ -10,6 +10,7 @@ static func getMutex() -> Mutex:
 		return mutex[1]
 	var mutexInstance = Mutex.new()
 	mutex[1] = mutexInstance
+	mutex[0] = true
 	return mutexInstance
 	
 
