@@ -39,6 +39,11 @@ The descendant nodes will then move accordingly when setting an offset in this n
 
 # 4. Tilemap 节点
 
+- tilemap在godot 4.x中的用法
+- https://www.bilibili.com/video/BV1cR4y1Z7Pq/?spm_id_from=333.999.0.0&vd_source=4f3b881aea002f58e78c896adbef428d
+- https://www.bilibili.com/video/BV1bd4y1x7dP/?spm_id_from=333.788&vd_source=4f3b881aea002f58e78c896adbef428d
+
+
 - tilemap的由tileset组成，tileset由tile一个个单个图块组成
 
 - 基本上通过熟练使用get_cell、set_cell、world_to_map这些函数就可以解决大多数普通关卡制作需求

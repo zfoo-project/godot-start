@@ -67,23 +67,17 @@ z=x+y
 
 # 5.导出变量
 
-- export关键字可以让变量在编辑器中编辑
+- @export关键字可以让变量在编辑器中编辑，godot编辑器里的文档中有详细的用法
 
 ```
 # 导出一个数字
-export var a = 1
+@export var a = 1
 # 导出一个节点路径
-export var b:NodePath
-# 导出一个节点路径，不同的写法
-export(NodePath) var c
+@export var b:NodePath
 # 导出一个文件路径
-export(String, FILE) var e 
+@export_file var sound_effect_path: String
 # 导出一个文件路径，以txt结尾
-export(String, FILE, "*.txt") var d
-# 导出一个资源文件路径
-export(Resource) var f
-# 导出一个颜色
-export(Color, RGB) var g
+@export_file("*.txt") var notes_path: String
 ```
 
 # 6.函数
@@ -257,10 +251,16 @@ func dictionaryIterator():
 
 # 12. 静态变量和静态方法
 
-- const变量（静态变量）
+- const常量
 
 ```
 const ANSWER = 42
+```
+
+- 静态变量，常量和静态变量不是一个东西，有区别的
+
+```
+static var my_static_field = 42
 ```
 
 - 静态方法
@@ -292,6 +292,8 @@ class Animal:
 	static func staticFuction():
 		pass
 ```
+
+- 使用super关键字调用父类方法
 
 # 14. 调试
 

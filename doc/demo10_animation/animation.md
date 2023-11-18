@@ -47,12 +47,9 @@ autostart ：自动开始，载入场景后计时，也可以使用 start 方法
 - 渐变节点使用非常简单方便，可以对一个物体的任意属性进行动画控制，当然，也可以同时处理多个动画对象。其主要方法有以下几个：
 
 ```
-repeat ：是否重复
-start() ：开始渐变，结束后触发 tween_completed 信号
-interpolate_property() ：设置进行动画的节点属性以及时长等，需要传递属性名称、开始结束值、时长等参数
-
-这里最重要的方法是 interpolate_property() ，可以在 Godot 编辑器中按 F4搜索 Tween 类进行查看。
-当然，和 Timer 节点一样，我们完全可以在代码中动态创建Tween 对象。
+var tween: Tween = tween = create_tween()
+# 无限循环动画
+tween.set_loops()
 
 
 Smoothly animates a node's properties over time.

@@ -9,6 +9,7 @@
 
 # 2. 法线贴图NormalMap
 
+- 在godot4中需要在Sprite2D中选择CanvasTexture才能够看到法线贴图
 - 法线贴图的定义
 
 ```
@@ -40,6 +41,7 @@
 # 3. 光照和阴影LightOccluder2D
 
 - 光照是指光的照射，godot 中光照的实现模拟了光对真实世界的影响。在场景中添加光源可以使场景产生相应的光照和阴影效果，获得更好的视觉效果。
+- 在godot4中，光线分为两个，点光源PointLight2D和全局光源DirectionalLight2D
 
 ![Image text](image/light_shadow_main.png)
 
