@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://df07ssfhn2ml5"]
+
+[ext_resource type="Texture2D" uid="uid://dwduwy3y2vipi" path="res://icon.svg" id="1_t771k"]
+[ext_resource type="Script" path="res://scene/demo13_camera/script/move_camera.gd" id="2_mglxg"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="icon" type="Sprite2D" parent="."]
+position = Vector2(249, 158)
+texture = ExtResource("1_t771k")
+
+[node name="Control" type="Control" parent="."]
+modulate = Color(0.47451, 1, 1, 1)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 636.0
+offset_top = 140.0
+offset_right = 676.0
+offset_bottom = 180.0
+metadata/_edit_group_ = true
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Control"]
+layout_mode = 0
+offset_right = 519.0
+offset_bottom = 512.0
+
+[node name="SubViewport" type="SubViewport" parent="Control/SubViewportContainer"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Control/SubViewportContainer/SubViewport"]
+position = Vector2(100, 100)
+texture = ExtResource("1_t771k")
+script = ExtResource("2_mglxg")

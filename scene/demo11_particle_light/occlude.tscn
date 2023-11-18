@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://sfmyqojowakw"]
+
+[ext_resource type="Texture2D" uid="uid://c7gp2gicvrsyx" path="res://scene/demo11_particle_light/image/white_square.png" id="1_3vx8l"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xu7kt"]
+polygon = PackedVector2Array(-142, -142, -150, 146, 154, 148, 148, -154)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+modulate = Color(0.105882, 0.215686, 0.254902, 1)
+position = Vector2(560, 332)
+scale = Vector2(4.27333, 4.27333)
+texture = ExtResource("1_3vx8l")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(0, 0.0156863, 0.180392, 1)
+position = Vector2(471, 157)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_3vx8l")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Shadow"]
+position = Vector2(-10, 0)
+occluder = SubResource("OccluderPolygon2D_xu7kt")
+occluder_light_mask = 2
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(619, 366)
+scale = Vector2(4.56333, 2.77667)
+shadow_enabled = true
+shadow_item_cull_mask = 2
+texture = ExtResource("1_3vx8l")

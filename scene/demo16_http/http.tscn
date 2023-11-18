@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dj6nuhowb41ul"]
+
+[ext_resource type="Script" path="res://scene/demo16_http/script/httpRequest.gd" id="1_c5eg4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+script = ExtResource("1_c5eg4")
+
+[connection signal="request_completed" from="HTTPRequest" to="HTTPRequest" method="_on_request_completed"]

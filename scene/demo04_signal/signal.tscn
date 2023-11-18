@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbxj3ocgvec8"]
+
+[ext_resource type="Script" path="res://scene/demo04_signal/script/signal.gd" id="1_dadg8"]
+[ext_resource type="Script" path="res://scene/demo04_signal/script/mySignal.gd" id="2_lvqsi"]
+[ext_resource type="Script" path="res://scene/demo04_signal/script/await.gd" id="3_4hptw"]
+[ext_resource type="Script" path="res://scene/demo04_signal/thread.gd" id="4_r6xio"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dadg8")
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 126.0
+offset_top = 62.0
+offset_right = 240.0
+offset_bottom = 109.0
+text = "button1"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 394.0
+offset_top = 62.0
+offset_right = 485.0
+offset_bottom = 111.0
+text = "button2"
+
+[node name="MySignal" type="Button" parent="."]
+offset_left = 141.0
+offset_top = 222.0
+offset_right = 245.0
+offset_bottom = 271.0
+text = "mySignal"
+script = ExtResource("2_lvqsi")
+
+[node name="Await" type="Button" parent="."]
+offset_left = 132.0
+offset_top = 354.0
+offset_right = 225.0
+offset_bottom = 398.0
+text = "await"
+script = ExtResource("3_4hptw")
+
+[node name="Thread" type="Button" parent="."]
+offset_left = 141.0
+offset_top = 497.0
+offset_right = 235.0
+offset_bottom = 545.0
+text = "thread"
+script = ExtResource("4_r6xio")
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]

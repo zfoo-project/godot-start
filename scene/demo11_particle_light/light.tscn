@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxg5bb58pw3ws"]
+
+[ext_resource type="Texture2D" uid="uid://c7gp2gicvrsyx" path="res://scene/demo11_particle_light/image/white_square.png" id="1_6vp7i"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+modulate = Color(0.176471, 0.384314, 0.396078, 1)
+position = Vector2(212, 153)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_6vp7i")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+modulate = Color(0.423529, 0.32549, 0.227451, 1)
+position = Vector2(536, 149)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_6vp7i")
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+modulate = Color(0.588235, 0.168627, 0.278431, 1)
+position = Vector2(859, 148)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_6vp7i")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(539, 246)
+scale = Vector2(3.10667, 0.51)
+texture = ExtResource("1_6vp7i")

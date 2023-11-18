@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://bnqtr1vlp0npl"]
+
+[ext_resource type="Script" path="res://scene/demo03_lifecycle/script/parent.gd" id="1_pcyfp"]
+[ext_resource type="Script" path="res://scene/demo03_lifecycle/script/sub_node1.gd" id="2_51utr"]
+[ext_resource type="Script" path="res://scene/demo03_lifecycle/script/sub_node2.gd" id="3_8nf4e"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_pcyfp")
+
+[node name="SubNode1" type="Node2D" parent="."]
+script = ExtResource("2_51utr")
+
+[node name="SubNode2" type="Node" parent="SubNode1"]
+script = ExtResource("3_8nf4e")
+
+[node name="DeleteButton" type="Button" parent="."]
+offset_left = 595.0
+offset_top = 258.0
+offset_right = 742.0
+offset_bottom = 307.0
+text = "Delete SubNode1"

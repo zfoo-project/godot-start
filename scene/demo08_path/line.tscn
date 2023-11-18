@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbh46yr5q0cve"]
+
+[ext_resource type="Texture2D" uid="uid://dwduwy3y2vipi" path="res://icon.svg" id="2_316ts"]
+[ext_resource type="Script" path="res://scene/demo08_path/script/pathFollow2D.gd" id="3_pk2oc"]
+[ext_resource type="Script" path="res://scene/demo08_path/script/player.gd" id="3_t2423"]
+
+[sub_resource type="Curve2D" id="Curve2D_tde6t"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 54, 290, 0, 0, 0, 0, 185, 163, 0, 0, 0, 0, 365, 341, 0, 0, 0, 0, 486, 147, 0, 0, 0, 0, 554, 404, 0, 0, 0, 0, 598, 561, 0, 0, 0, 0, 711, 599, 0, 0, 0, 0, 785, 259, 0, 0, 0, 0, 961, 55, 0, 0, 0, 0, 1016, 257, 0, 0, 0, 0, 961, 370, 0, 0, 0, 0, 1014, 563)
+}
+point_count = 12
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(54, 290)
+rotation = -0.769896
+texture = ExtResource("2_316ts")
+script = ExtResource("3_t2423")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_tde6t")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(54, 290)
+rotation = -0.769896
+script = ExtResource("3_pk2oc")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Path2D/PathFollow2D"]
+remote_path = NodePath("../../../Player")

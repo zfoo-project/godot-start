@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqfcap32ndasf"]
+
+[ext_resource type="Script" path="res://scene/demo13_camera/script/switch_camera.gd" id="1_h3uuu"]
+[ext_resource type="Texture2D" uid="uid://dwduwy3y2vipi" path="res://icon.svg" id="2_2b276"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_h3uuu")
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+modulate = Color(0.14902, 1, 0.054902, 1)
+position = Vector2(-528, 248)
+texture = ExtResource("2_2b276")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+modulate = Color(0.67451, 0.211765, 1, 1)
+position = Vector2(507, 285)
+texture = ExtResource("2_2b276")
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0.768627, 1)
+position = Vector2(-549, 884)
+texture = ExtResource("2_2b276")
+
+[node name="Sprite4" type="Sprite2D" parent="."]
+modulate = Color(0.690196, 0.639216, 0, 1)
+position = Vector2(533, 944)
+texture = ExtResource("2_2b276")
+
+[node name="Camera2D1" type="Camera2D" parent="."]
+position = Vector2(-512, 300)
+
+[node name="Camera2D2" type="Camera2D" parent="."]
+position = Vector2(512, 300)
+
+[node name="Camera2D3" type="Camera2D" parent="."]
+position = Vector2(-512, 900)
+
+[node name="Camera2D4" type="Camera2D" parent="."]
+position = Vector2(512, 900)

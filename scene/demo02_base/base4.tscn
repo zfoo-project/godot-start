@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtb4spakfebfu"]
+
+[ext_resource type="Script" path="res://scene/demo02_base/script/base4.gd" id="1_usodk"]
+
+[node name="Base4" type="Node2D"]
+script = ExtResource("1_usodk")

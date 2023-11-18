@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://0lol8wbfschs"]
+
+[ext_resource type="Texture2D" uid="uid://dwduwy3y2vipi" path="res://icon.svg" id="2_02wmm"]
+[ext_resource type="Script" path="res://scene/demo13_camera/script/move_camera.gd" id="2_lfqsy"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite1" type="Sprite2D" parent="."]
+modulate = Color(0.14902, 1, 0.054902, 1)
+position = Vector2(-528, 248)
+texture = ExtResource("2_02wmm")
+
+[node name="Sprite2" type="Sprite2D" parent="."]
+modulate = Color(0.67451, 0.211765, 1, 1)
+position = Vector2(507, 285)
+texture = ExtResource("2_02wmm")
+
+[node name="Sprite3" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0.768627, 1)
+position = Vector2(26, 293)
+texture = ExtResource("2_02wmm")
+script = ExtResource("2_lfqsy")
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="Sprite3"]

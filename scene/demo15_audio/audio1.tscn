@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqfkyrca8rltq"]
+
+[ext_resource type="AudioStream" uid="uid://wmmnatovgd36" path="res://scene/demo15_audio/audio/Follow Me - Andrew Langdon.mp3" id="1_cbpyw"]
+
+[node name="Audio1" type="Node2D"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_cbpyw")
+autoplay = true

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://62hau30vrs2h"]
+
+[ext_resource type="FontFile" uid="uid://ck65b3tqyxgh0" path="res://scene/demo12_gui/Source_Han_Sans.ttf" id="1_vny5y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 166.0
+offset_top = 110.0
+offset_right = 345.0
+offset_bottom = 153.0
+theme_override_fonts/font = ExtResource("1_vny5y")
+text = "你好啊"

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wmmnatovgd36"
+path="res://.godot/imported/Follow Me - Andrew Langdon.mp3-208cd3bb30a229567f90fba5350fdc21.mp3str"
+
+[deps]
+
+source_file="res://scene/demo15_audio/audio/Follow Me - Andrew Langdon.mp3"
+dest_files=["res://.godot/imported/Follow Me - Andrew Langdon.mp3-208cd3bb30a229567f90fba5350fdc21.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
