@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scene/demo04_signal/script/signal.gd" id="1_dadg8"]
 [ext_resource type="Script" path="res://scene/demo04_signal/script/mySignal.gd" id="2_lvqsi"]
 [ext_resource type="Script" path="res://scene/demo04_signal/script/await.gd" id="3_4hptw"]
-[ext_resource type="Script" path="res://scene/demo04_signal/thread.gd" id="4_r6xio"]
+[ext_resource type="Script" path="res://scene/demo04_signal/script/thread.gd" id="4_r6xio"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_dadg8")

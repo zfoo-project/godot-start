@@ -26,9 +26,11 @@ func _process(delta):
 	#$NodeChild.position = Vector2.ZERO
 	#get_parent().position = Vector2.ZERO
 	#self.call_deferred("myCall")
+	#self.call_deferred_thread_group("myCall")
 	pass
 
 
 func myCall():
+	print("my call")
 	get_parent().position = Vector2.ZERO
 	pass
