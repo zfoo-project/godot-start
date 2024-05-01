@@ -13,4 +13,4 @@
 
 - [godot服务器框架](https://github.com/zfoo-project/zfoo)
 
-- godot start学习交流qq群，710511812
+- godot start学习交流qq群，695804331
