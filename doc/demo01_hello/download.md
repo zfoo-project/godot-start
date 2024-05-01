@@ -12,4 +12,4 @@ git config --global http.proxy http://127.0.0.1:10809
 git config --global https.proxy https://127.0.0.1:10809
 ```
 
-- godot start学习交流群，710511812
+- godot start学习交流群，695804331
