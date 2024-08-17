@@ -15,6 +15,7 @@ dest_files=["res://.godot/imported/Source_Han_Sans.ttf-8639e80c0af22b5c464d63266
 Rendering=null
 antialiasing=1
 generate_mipmaps=false
+disable_embedded_bitmaps=true
 multichannel_signed_distance_field=false
 msdf_pixel_range=8
 msdf_size=48
