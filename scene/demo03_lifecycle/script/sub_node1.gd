@@ -37,7 +37,7 @@ func nodeUsage():
 	var subNode2 = $"SubNode2"
 	var subNode3 = get_node("SubNode2")
 	# 根节点查找法，会返回节点树从上到下找到的第一个节点
-	var subNode4 = get_tree().root.find_node("SubNode2", true, false)
+	var subNode4 = get_tree().root.find_child("SubNode2", true, false)
 	print(currentNode1.name)
 	print(currentNode2.name)
 	print(parentNode1.name)
