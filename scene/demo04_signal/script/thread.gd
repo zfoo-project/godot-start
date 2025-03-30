@@ -11,7 +11,6 @@ func onButton2():
 	
 	myThread.start(Callable(self, "threadTest"))
 	
-	print()
 	print("Thread Active: ", myThread.is_alive())
 	
 	var waitForThread = myThread.wait_to_finish() # wait for our thread to finish before moving on

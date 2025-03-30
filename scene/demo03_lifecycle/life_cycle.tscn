@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bnqtr1vlp0npl"]
 
-[ext_resource type="Script" path="res://scene/demo03_lifecycle/script/parent.gd" id="1_pcyfp"]
-[ext_resource type="Script" path="res://scene/demo03_lifecycle/script/sub_node1.gd" id="2_51utr"]
-[ext_resource type="Script" path="res://scene/demo03_lifecycle/script/sub_node2.gd" id="3_8nf4e"]
+[ext_resource type="Script" uid="uid://cykbcqoq5xwyv" path="res://scene/demo03_lifecycle/script/parent.gd" id="1_pcyfp"]
+[ext_resource type="Script" uid="uid://b27c80l4ccfwi" path="res://scene/demo03_lifecycle/script/sub_node1.gd" id="2_51utr"]
+[ext_resource type="Script" uid="uid://cmrv6wysynelv" path="res://scene/demo03_lifecycle/script/sub_node2.gd" id="3_8nf4e"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_pcyfp")

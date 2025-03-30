@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://df07ssfhn2ml5"]
 
 [ext_resource type="Texture2D" uid="uid://dwduwy3y2vipi" path="res://icon.svg" id="1_t771k"]
-[ext_resource type="Script" path="res://scene/demo13_camera/script/move_camera.gd" id="2_mglxg"]
+[ext_resource type="Script" uid="uid://dkd0hf5f67bv2" path="res://scene/demo13_camera/script/move_camera.gd" id="2_mglxg"]
 
 [node name="Node2D" type="Node2D"]
 

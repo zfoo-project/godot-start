@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://b0dm0cogxc3y6"]
 
-[ext_resource type="Script" path="res://scene/demo08_path/script/tile.gd" id="1_6iolp"]
+[ext_resource type="Script" uid="uid://bdd8bphnhbwxo" path="res://scene/demo08_path/script/tile.gd" id="1_6iolp"]
 [ext_resource type="Texture2D" uid="uid://b2kiyycgqh3yv" path="res://scene/demo08_path/image/Grasslands.png" id="2_4p2ab"]
 [ext_resource type="Texture2D" uid="uid://cdn4iyiywnm2f" path="res://scene/demo08_path/image/Robi.png" id="3_3q3se"]
 

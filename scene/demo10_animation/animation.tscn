@@ -1,9 +1,9 @@
 [gd_scene load_steps=20 format=3 uid="uid://0m7gwx6kggro"]
 
 [ext_resource type="Texture2D" uid="uid://do4b3hpflfwi1" path="res://scene/demo10_animation/image/player.png" id="1_s2byb"]
-[ext_resource type="Script" path="res://scene/demo10_animation/script/timer_animation.gd" id="2_moa6m"]
+[ext_resource type="Script" uid="uid://hvhwc1jdgf74" path="res://scene/demo10_animation/script/timer_animation.gd" id="2_moa6m"]
 [ext_resource type="Texture2D" uid="uid://dwduwy3y2vipi" path="res://icon.svg" id="3_eunem"]
-[ext_resource type="Script" path="res://scene/demo10_animation/script/tween_animation.gd" id="4_ih3vw"]
+[ext_resource type="Script" uid="uid://c130jgyxh7rsj" path="res://scene/demo10_animation/script/tween_animation.gd" id="4_ih3vw"]
 [ext_resource type="Texture2D" uid="uid://cdcpww682ywng" path="res://scene/demo10_animation/image/run-1.png" id="5_vwedp"]
 [ext_resource type="Texture2D" uid="uid://chsdpv60jcl58" path="res://scene/demo10_animation/image/run-2.png" id="6_2xnpv"]
 [ext_resource type="Texture2D" uid="uid://dwbbk8etvj2nd" path="res://scene/demo10_animation/image/run-3.png" id="7_ev8ek"]
@@ -47,8 +47,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_i700a"]
 _data = {
-"RESET": SubResource("Animation_grv05"),
-"player": SubResource("Animation_hax8x")
+&"RESET": SubResource("Animation_grv05"),
+&"player": SubResource("Animation_hax8x")
 }
 
 [sub_resource type="Animation" id="Animation_3c1s5"]
@@ -85,8 +85,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_67fo3"]
 _data = {
-"RESET": SubResource("Animation_3c1s5"),
-"player": SubResource("Animation_gpqtf")
+&"RESET": SubResource("Animation_3c1s5"),
+&"player": SubResource("Animation_gpqtf")
 }
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_txsbt"]
@@ -154,7 +154,7 @@ texture = ExtResource("3_eunem")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animation_3"]
 libraries = {
-"": SubResource("AnimationLibrary_i700a")
+&"": SubResource("AnimationLibrary_i700a")
 }
 autoplay = "player"
 
@@ -168,7 +168,7 @@ hframes = 60
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Animation_4"]
 libraries = {
-"": SubResource("AnimationLibrary_67fo3")
+&"": SubResource("AnimationLibrary_67fo3")
 }
 autoplay = "player"
 

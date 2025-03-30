@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dbh46yr5q0cve"]
 
 [ext_resource type="Texture2D" uid="uid://dwduwy3y2vipi" path="res://icon.svg" id="2_316ts"]
-[ext_resource type="Script" path="res://scene/demo08_path/script/pathFollow2D.gd" id="3_pk2oc"]
-[ext_resource type="Script" path="res://scene/demo08_path/script/player.gd" id="3_t2423"]
+[ext_resource type="Script" uid="uid://d2hdbvnd7f4gj" path="res://scene/demo08_path/script/pathFollow2D.gd" id="3_pk2oc"]
+[ext_resource type="Script" uid="uid://ki43bu44125l" path="res://scene/demo08_path/script/player.gd" id="3_t2423"]
 
 [sub_resource type="Curve2D" id="Curve2D_tde6t"]
 _data = {

@@ -22,5 +22,5 @@ color_ramp = SubResource("GradientTexture1D_mu0kg")
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(493, 458)
 amount = 60
-process_material = SubResource("ParticleProcessMaterial_j8287")
 texture = ExtResource("1_ux0kf")
+process_material = SubResource("ParticleProcessMaterial_j8287")
