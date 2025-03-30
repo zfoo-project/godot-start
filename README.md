@@ -2,9 +2,10 @@
 
 - godot engine utils and sample, example, demo, tutorial, learning, course
 
-- 目前这个项目可以在 godot 4.3 中运行
-- godot 4.2在 [godot-4.2 分支](https://github.com/zfoo-project/godot-start/tree/godot-4.2)
-- godot 3.x在 [godot-3.3-3.5-3.x 分支](https://github.com/zfoo-project/godot-start/tree/godot-3.3-3.5-3.x)
+- 目前这个项目可以在 godot 4.4 中运行
+- [godot 4.3 分支](https://github.com/zfoo-project/godot-start/tree/godot-4.3)
+- [godot 4.2 分支](https://github.com/zfoo-project/godot-start/tree/godot-4.2)
+- [godot 3.x 分支](https://github.com/zfoo-project/godot-start/tree/godot-3.3-3.5-3.x)
 
 - 这是一个关于godot的基本使用示例和学习教程的工程项目，[B站配套视频教程](https://www.bilibili.com/video/BV14Y411h7Po)
 
